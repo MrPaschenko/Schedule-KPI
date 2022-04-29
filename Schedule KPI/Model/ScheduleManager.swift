@@ -22,15 +22,13 @@ struct ScheduleManager {
             let session = URLSession(configuration: .default)
             
             let task = session.dataTask(with: url) { data, response, error in
-                if error != nil {
-                    self.delegate?.didFailWithError(error: error!)
+                if let error = error {
+                    self.delegate?.didFailWithError(error: error)
                     return
                 }
                 
-                if let safeData = data {
-                    if let schedule = self.parseJSON(safeData) {
-                        self.delegate?.didUpdateSchedule(self, schedule: schedule)
-                    }
+                if let safeData = data, let schedule = self.parseJSON(safeData) {
+                    self.delegate?.didUpdateSchedule(self, schedule: schedule)
                 }
             }
             task.resume()
