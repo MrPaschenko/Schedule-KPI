@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Schedule KPI
-//
-//  Created by Дмитрий Пащенко on 26.04.2022.
-//
-
 import UIKit
 
 @main
