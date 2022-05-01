@@ -1,6 +1,7 @@
 import Foundation
+import UIKit
 
-class LessonsScheduleController: ViewController {
+class LessonsScheduleController: UITableViewController {
     var scheduleManager = ScheduleManager()
     
     override func viewDidLoad() {
@@ -25,6 +26,7 @@ extension LessonsScheduleController: ScheduleManagerDelegate {
     func sortPairs(in week: [ScheduleDay]) -> [ScheduleDay] {
         var newWeek = week
         for i in 0...5 {
+            //TODO: don't use !
             newWeek[i].pairs.sort { Double($0.time)! < Double($1.time)! }
         }
         return newWeek
