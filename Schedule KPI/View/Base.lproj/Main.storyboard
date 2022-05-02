@@ -118,13 +118,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Назва групи" id="i6j-MN-kah">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="TkT-30-AhO">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="EMe-D1-bxN">
-                                <rect key="frame" x="20" y="5" width="137.5" height="34.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Змінити групу"/>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" title="Змінити групу" style="plain" id="TkT-30-AhO">
+                            <connections>
+                                <action selector="changeGroupTapped:" destination="GI2-gp-xpN" id="L6k-IA-ExK"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="TbT-JX-o1J">
                             <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="s98-Xb-xmT">
@@ -134,6 +131,9 @@
                                     <segment title="1"/>
                                     <segment title="2"/>
                                 </segments>
+                                <connections>
+                                    <action selector="weekChanged:" destination="GI2-gp-xpN" eventType="valueChanged" id="npw-3E-cBr"/>
+                                </connections>
                             </segmentedControl>
                         </barButtonItem>
                     </navigationItem>
