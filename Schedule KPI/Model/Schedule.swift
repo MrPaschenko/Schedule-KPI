@@ -1,7 +1,6 @@
 import Foundation
 
 struct Schedule: Decodable {
-    var paging: Int?
     var data: ScheduleData
 }
 
