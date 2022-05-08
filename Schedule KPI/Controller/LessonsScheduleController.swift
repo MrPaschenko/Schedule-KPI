@@ -59,7 +59,21 @@ extension LessonsScheduleController {
         let pair = scheduleWeek[indexPath.section].pairs[indexPath.row]
         
         let alertTitle = pair.type != "" ? "\(pair.name) (\(pair.type))" : pair.name
-        let alertMessage = pair.teacherName != "" ? "\(pair.teacherName)\n\(pair.place)" : pair.place
+        lazy var alertMessage: String = {
+            if pair.teacherName != "" {
+                if pair.place != "" {
+                    return "\(pair.teacherName)\n\(pair.place)"
+                } else {
+                    return "\(pair.teacherName)"
+                }
+            } else {
+                if pair.place != "" {
+                    return "\(pair.place)"
+                } else {
+                    return ""
+                }
+            }
+        }()
         
         let alert = UIAlertController(title: alertTitle,
                                       message: alertMessage,
