@@ -13,6 +13,9 @@
 		A27F6488281763DF00D6791D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27F6487281763DF00D6791D /* Assets.xcassets */; };
 		A27F648B281763E000D6791D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27F6489281763E000D6791D /* LaunchScreen.storyboard */; };
 		A27F64932818807900D6791D /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27F64922818807900D6791D /* Schedule.swift */; };
+		A2D33F0828269C4D00374AC1 /* GroupChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0728269C4D00374AC1 /* GroupChangeController.swift */; };
+		A2D33F0A28269EF600374AC1 /* GroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0928269EF600374AC1 /* GroupList.swift */; };
+		A2D33F0C2826A00B00374AC1 /* GroupListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0B2826A00B00374AC1 /* GroupListManager.swift */; };
 		A2F7D772281882D900201950 /* LessonsScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F7D771281882D900201950 /* LessonsScheduleController.swift */; };
 		A2F7D774281884EC00201950 /* ScheduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F7D773281884EC00201950 /* ScheduleManager.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +29,9 @@
 		A27F648A281763E000D6791D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27F648C281763E000D6791D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27F64922818807900D6791D /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		A2D33F0728269C4D00374AC1 /* GroupChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChangeController.swift; sourceTree = "<group>"; };
+		A2D33F0928269EF600374AC1 /* GroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupList.swift; sourceTree = "<group>"; };
+		A2D33F0B2826A00B00374AC1 /* GroupListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListManager.swift; sourceTree = "<group>"; };
 		A2F7D771281882D900201950 /* LessonsScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsScheduleController.swift; sourceTree = "<group>"; };
 		A2F7D773281884EC00201950 /* ScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +82,8 @@
 			children = (
 				A27F64922818807900D6791D /* Schedule.swift */,
 				A2F7D773281884EC00201950 /* ScheduleManager.swift */,
+				A2D33F0928269EF600374AC1 /* GroupList.swift */,
+				A2D33F0B2826A00B00374AC1 /* GroupListManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A2F7D771281882D900201950 /* LessonsScheduleController.swift */,
+				A2D33F0728269C4D00374AC1 /* GroupChangeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +182,9 @@
 				A2F7D772281882D900201950 /* LessonsScheduleController.swift in Sources */,
 				A27F64932818807900D6791D /* Schedule.swift in Sources */,
 				A27F6481281763DD00D6791D /* SceneDelegate.swift in Sources */,
+				A2D33F0C2826A00B00374AC1 /* GroupListManager.swift in Sources */,
+				A2D33F0828269C4D00374AC1 /* GroupChangeController.swift in Sources */,
+				A2D33F0A28269EF600374AC1 /* GroupList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,11 +6,12 @@ class LessonsScheduleController: UITableViewController {
     var firstWeekSchedule = [ScheduleDay]()
     var secondWeekSchedule = [ScheduleDay]()
     var scheduleWeek = [ScheduleDay]()
+    var defaults = UserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scheduleManager.delegate = self
-        scheduleManager.getSchedule(groupCode: "іп-04")
+        scheduleManager.getSchedule(groupCode: defaults.string(forKey: "selectedGroup") ?? "ІП-01")
     }
     
     @IBAction func weekChanged(_ sender: UISegmentedControl) {
@@ -27,8 +28,8 @@ class LessonsScheduleController: UITableViewController {
         }
     }
     
-    @IBAction func changeGroupTapped(_ sender: UIBarButtonItem) {
-        print("change group tapped")
+    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+        scheduleManager.getSchedule(groupCode: defaults.string(forKey: "selectedGroup") ?? "ІП-01")
     }
 }
 

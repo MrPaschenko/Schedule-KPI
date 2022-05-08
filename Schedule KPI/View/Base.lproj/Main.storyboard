@@ -118,12 +118,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Назва групи" id="i6j-MN-kah">
-                        <barButtonItem key="leftBarButtonItem" title="Змінити групу" style="plain" id="TkT-30-AhO">
+                        <barButtonItem key="leftBarButtonItem" title="Змінити групу" id="TkT-30-AhO">
                             <connections>
-                                <action selector="changeGroupTapped:" destination="GI2-gp-xpN" id="L6k-IA-ExK"/>
+                                <segue destination="x2c-iO-8iK" kind="presentation" id="H8y-ga-pQp"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="TbT-JX-o1J">
+                        <barButtonItem key="rightBarButtonItem" id="TbT-JX-o1J">
                             <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="s98-Xb-xmT">
                                 <rect key="frame" x="302" y="5.5" width="92" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -141,6 +141,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1k-3h-U3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1181" y="1300"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bmh-zP-I6P">
+            <objects>
+                <navigationController id="x2c-iO-8iK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="erZ-E2-c3f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sTP-lx-VOm" kind="relationship" relationship="rootViewController" id="eqw-oK-IMU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxu-CC-DW3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1181" y="2049"/>
+        </scene>
+        <!--Зміна групи-->
+        <scene sceneID="0X1-sK-OfH">
+            <objects>
+                <tableViewController id="sTP-lx-VOm" customClass="GroupChangeController" customModule="Schedule_KPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="70F-aR-TmU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" textLabel="uYi-XH-ACV" style="IBUITableViewCellStyleDefault" id="tOx-Do-Ber">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tOx-Do-Ber" id="zWA-k9-QPi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uYi-XH-ACV">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sTP-lx-VOm" id="vjl-Ap-HFg"/>
+                            <outlet property="delegate" destination="sTP-lx-VOm" id="Pog-sM-esl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Зміна групи" id="acT-Zf-9Z7">
+                        <barButtonItem key="rightBarButtonItem" title="Готово" id="JlN-TZ-3WG">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="sTP-lx-VOm" id="ySo-4G-pWM"/>
+                                <segue destination="tuU-dy-JNj" kind="unwind" unwindAction="unwindToThisViewControllerWithSegue:" id="ben-tL-7yC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9J-WW-ovS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="tuU-dy-JNj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1181" y="2817"/>
         </scene>
     </scenes>
     <resources>
