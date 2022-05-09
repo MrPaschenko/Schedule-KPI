@@ -11,7 +11,7 @@ struct ScheduleManager {
     var delegate: ScheduleManagerDelegate?
     
     func getSchedule(groupCode: String) {
-        let urlString = "\(scheduleURL)?groupName=\(groupCode.uppercased())"
+        let urlString = "\(scheduleURL)?groupName=\(groupCode)"
         if let safeUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
             performRequest(with: safeUrlString)
         }
