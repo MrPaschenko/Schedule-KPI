@@ -11,6 +11,7 @@ class LessonsScheduleController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scheduleManager.delegate = self
+        navigationItem.title = defaults.string(forKey: "selectedGroup") ?? "ІП-01"
         scheduleManager.getSchedule(groupCode: defaults.string(forKey: "selectedGroup") ?? "ІП-01")
     }
     
