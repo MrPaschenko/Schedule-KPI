@@ -6,7 +6,9 @@ Simple iOS application which uses [Schedule KPI API](https://github.com/kpi-ua/s
 - Exams schedule
 - Lecturer schedule
 
-## Download
+## Download & Run
+
+![Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917](https://user-images.githubusercontent.com/64316080/168581675-cfc29e4a-410c-4664-9213-31f11560813c.svg) (soon)
 
 1. Clone this repository
 
@@ -16,9 +18,7 @@ git clone https://github.com/MrPaschenko/Schedule-KPI
 
 2. Open Schedule KPI.xcodeproj in Xcode
 
-## Run
-
-Select some iOS device and hit run button in Xcode
+3. Select some iOS device and hit run button in Xcode
 
 > Minimal supported iOS version is 14.0
 
