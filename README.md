@@ -37,3 +37,6 @@ TBD
 ### Schedule for teachers
 
 TBD
+
+> Apple and Apple Logo are trademarks of Apple Inc.
+> 
