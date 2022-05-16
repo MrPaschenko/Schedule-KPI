@@ -1,6 +1,6 @@
 # Schedule KPI
 
-Simple iOS application which uses [Schedule KPI API](https://github.com/kpi-ua/schedule.kpi.ua):
+Simple iOS application which uses [Schedule KPI API](https://github.com/kpi-ua/schedule.kpi.ua) and has following features:
 
 - Lessons schedule
 - Exams schedule
