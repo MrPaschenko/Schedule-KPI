@@ -1,39 +1,27 @@
 
-/* Class = "UITabBarItem"; title = "Розклад сесії"; ObjectID = "FCF-IB-rXy"; */
-"FCF-IB-rXy.title" = "Розклад сесії";
+/* Class = "UITabBarItem"; title = "Exams schedule"; ObjectID = "FCF-IB-rXy"; */
+"FCF-IB-rXy.title" = "Расписание сессии";
 
-/* Class = "UIBarButtonItem"; title = "Готово"; ObjectID = "JlN-TZ-3WG"; */
-"JlN-TZ-3WG.title" = "Готово";
+/* Class = "UITabBarItem"; title = "Group schedule"; ObjectID = "SS0-9F-Kh0"; */
+"SS0-9F-Kh0.title" = "Расписание группы";
 
-/* Class = "UITabBarItem"; title = "Розклад занять"; ObjectID = "SS0-9F-Kh0"; */
-"SS0-9F-Kh0.title" = "Розклад занять";
+/* Class = "UIBarButtonItem"; title = "Change group"; ObjectID = "TkT-30-AhO"; */
+"TkT-30-AhO.title" = "Изменить группу";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "TBH-hY-BAH"; */
-"TBH-hY-BAH.text" = "Title";
+/* Class = "UINavigationItem"; title = "Group change"; ObjectID = "acT-Zf-9Z7"; */
+"acT-Zf-9Z7.title" = "Изменение группы";
 
-/* Class = "UIBarButtonItem"; title = "Змінити групу"; ObjectID = "TkT-30-AhO"; */
-"TkT-30-AhO.title" = "Змінити групу";
+/* Class = "UITabBarItem"; title = "Schedule for teachers"; ObjectID = "enG-xv-aSW"; */
+"enG-xv-aSW.title" = "Расписание для преподавателей";
 
-/* Class = "UINavigationItem"; title = "Зміна групи"; ObjectID = "acT-Zf-9Z7"; */
-"acT-Zf-9Z7.title" = "Зміна групи";
+/* Class = "UINavigationItem"; title = "Group name"; ObjectID = "i6j-MN-kah"; */
+"i6j-MN-kah.title" = "Название группы";
 
-/* Class = "UITabBarItem"; title = "Розклад для викладачів"; ObjectID = "enG-xv-aSW"; */
-"enG-xv-aSW.title" = "Розклад для викладачів";
-
-/* Class = "UINavigationItem"; title = "Назва групи"; ObjectID = "i6j-MN-kah"; */
-"i6j-MN-kah.title" = "Назва групи";
-
-/* Class = "UILabel"; text = "Title"; ObjectID = "jPF-JL-wZ7"; */
-"jPF-JL-wZ7.text" = "Title";
-
-/* Class = "UISearchBar"; placeholder = "Пошук"; ObjectID = "jyk-Nh-G9d"; */
-"jyk-Nh-G9d.placeholder" = "Пошук";
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "jyk-Nh-G9d"; */
+"jyk-Nh-G9d.placeholder" = "Поиск";
 
 /* Class = "UISegmentedControl"; s98-Xb-xmT.segmentTitles[0] = "1"; ObjectID = "s98-Xb-xmT"; */
 "s98-Xb-xmT.segmentTitles[0]" = "1";
 
 /* Class = "UISegmentedControl"; s98-Xb-xmT.segmentTitles[1] = "2"; ObjectID = "s98-Xb-xmT"; */
 "s98-Xb-xmT.segmentTitles[1]" = "2";
-
-/* Class = "UILabel"; text = "Detail"; ObjectID = "xGR-0T-AJW"; */
-"xGR-0T-AJW.text" = "Detail";

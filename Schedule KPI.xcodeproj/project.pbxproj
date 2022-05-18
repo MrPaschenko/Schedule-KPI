@@ -32,6 +32,10 @@
 		A2D33F0728269C4D00374AC1 /* GroupChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChangeController.swift; sourceTree = "<group>"; };
 		A2D33F0928269EF600374AC1 /* GroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupList.swift; sourceTree = "<group>"; };
 		A2D33F0B2826A00B00374AC1 /* GroupListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListManager.swift; sourceTree = "<group>"; };
+		A2EC54C92835839F00F227D6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		A2EC54CA2835839F00F227D6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A2EC54CB2835843700F227D6 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		A2EC54CC2835843700F227D6 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A2F7D771281882D900201950 /* LessonsScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsScheduleController.swift; sourceTree = "<group>"; };
 		A2F7D773281884EC00201950 /* ScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +152,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				uk,
 			);
 			mainGroup = A27F6472281763DD00D6791D;
 			productRefGroup = A27F647C281763DD00D6791D /* Products */;
@@ -195,6 +201,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				A27F6485281763DD00D6791D /* Base */,
+				A2EC54C92835839F00F227D6 /* ru */,
+				A2EC54CB2835843700F227D6 /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -203,6 +211,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				A27F648A281763E000D6791D /* Base */,
+				A2EC54CA2835839F00F227D6 /* ru */,
+				A2EC54CC2835843700F227D6 /* uk */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
