@@ -81,7 +81,7 @@ extension LessonsScheduleController {
                                       message: alertMessage,
                                       preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Добре", style: .cancel))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .cancel))
         present(alert, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -89,17 +89,17 @@ extension LessonsScheduleController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch scheduleWeek[section].day {
         case "Пн":
-            return scheduleWeek[section].pairs.isEmpty ? nil : "Понеділок"
+            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Monday", comment: "")
         case "Вв":
-            return scheduleWeek[section].pairs.isEmpty ? nil : "Вівторок"
+            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Tuesday", comment: "")
         case "Ср":
-            return scheduleWeek[section].pairs.isEmpty ? nil : "Середа"
+            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Wednesday", comment: "")
         case "Чт":
-            return scheduleWeek[section].pairs.isEmpty ? nil : "Четвер"
+            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Thursday", comment: "")
         case "Пт":
-            return scheduleWeek[section].pairs.isEmpty ? nil : "Пʼятниця"
+            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Friday", comment: "")
         case "Сб":
-            return scheduleWeek[section].pairs.isEmpty ? nil : "Субота"
+            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Saturday", comment: "")
         default:
             return scheduleWeek[section].day
         }
