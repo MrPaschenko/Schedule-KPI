@@ -83,4 +83,8 @@ extension GroupChangeController: UISearchBarDelegate {
             self.tableView.reloadData()
         }
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+    }
 }
