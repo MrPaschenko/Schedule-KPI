@@ -87,22 +87,18 @@ extension LessonsScheduleController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch scheduleWeek[section].day {
-        case "Пн":
-            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Monday", comment: "")
-        case "Вв":
-            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Tuesday", comment: "")
-        case "Ср":
-            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Wednesday", comment: "")
-        case "Чт":
-            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Thursday", comment: "")
-        case "Пт":
-            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Friday", comment: "")
-        case "Сб":
-            return scheduleWeek[section].pairs.isEmpty ? nil : NSLocalizedString("Saturday", comment: "")
-        default:
-            return scheduleWeek[section].day
+        if scheduleWeek[section].pairs.isEmpty {
+            return nil
         }
+        //TODO: Use enum
+        let dayNames = ["Пн": NSLocalizedString("Monday", comment: ""),
+                        "Вв": NSLocalizedString("Tuesday", comment: ""),
+                        "Ср": NSLocalizedString("Wednesday", comment: ""),
+                        "Чт": NSLocalizedString("Thursday", comment: ""),
+                        "Пт": NSLocalizedString("Friday", comment: ""),
+                        "Сб": NSLocalizedString("Saturday", comment: "")]
+        
+        return dayNames[scheduleWeek[section].day]
     }
 }
 
