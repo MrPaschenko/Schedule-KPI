@@ -38,6 +38,7 @@ class LessonsScheduleController: UITableViewController {
 //MARK: - TableView
 extension LessonsScheduleController {
     override func numberOfSections(in tableView: UITableView) -> Int {
+        daysWithPairs = []
         for day in scheduleWeek {
             if !day.pairs.isEmpty {
                 daysWithPairs.append(day)
