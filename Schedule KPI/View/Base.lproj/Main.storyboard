@@ -28,11 +28,11 @@
             </objects>
             <point key="canvasLocation" x="-295" y="-186"/>
         </scene>
-        <!--Розклад занять-->
+        <!--Group schedule-->
         <scene sceneID="dr3-2W-7Ox">
             <objects>
                 <navigationController id="mtf-GE-rt6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Розклад занять" image="person.3.fill" catalog="system" id="SS0-9F-Kh0"/>
+                    <tabBarItem key="tabBarItem" title="Group schedule" image="person.3.fill" catalog="system" id="SS0-9F-Kh0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="P0j-Sb-9qK">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="-1181" y="601"/>
         </scene>
-        <!--Розклад сесії-->
+        <!--Exams schedule-->
         <scene sceneID="DLI-tQ-i6v">
             <objects>
                 <viewController id="C9L-c8-Hdt" sceneMemberID="viewController">
@@ -56,13 +56,13 @@
                         <viewLayoutGuide key="safeArea" id="Ys2-l8-WXa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Розклад сесії" image="graduationcap.fill" catalog="system" id="FCF-IB-rXy"/>
+                    <tabBarItem key="tabBarItem" title="Exams schedule" image="graduationcap.fill" catalog="system" id="FCF-IB-rXy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZk-7j-fyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-296" y="601"/>
         </scene>
-        <!--Розклад для викладачів-->
+        <!--Schedule for teachers-->
         <scene sceneID="vGt-AN-Zuv">
             <objects>
                 <viewController id="qT9-VG-HTT" sceneMemberID="viewController">
@@ -72,14 +72,14 @@
                         <viewLayoutGuide key="safeArea" id="Opa-Ee-Neh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Розклад для викладачів" image="person.fill" catalog="system" id="enG-xv-aSW"/>
+                    <tabBarItem key="tabBarItem" title="Schedule for teachers" image="person.fill" catalog="system" id="enG-xv-aSW"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzv-lp-sla" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="516" y="601"/>
         </scene>
-        <!--Назва групи-->
+        <!--Group name-->
         <scene sceneID="aZu-Ss-Ftn">
             <objects>
                 <tableViewController id="GI2-gp-xpN" customClass="LessonsScheduleController" customModule="Schedule_KPI" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,8 +101,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xGR-0T-AJW">
-                                            <rect key="frame" x="20" y="22.5" width="30.5" height="13.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xGR-0T-AJW">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
@@ -117,8 +117,8 @@
                             <outlet property="delegate" destination="GI2-gp-xpN" id="aiN-yV-p49"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Назва групи" id="i6j-MN-kah">
-                        <barButtonItem key="leftBarButtonItem" title="Змінити групу" id="TkT-30-AhO">
+                    <navigationItem key="navigationItem" title="Group name" id="i6j-MN-kah">
+                        <barButtonItem key="leftBarButtonItem" title="Change group" id="TkT-30-AhO">
                             <connections>
                                 <segue destination="x2c-iO-8iK" kind="presentation" id="H8y-ga-pQp"/>
                             </connections>
@@ -158,7 +158,7 @@
             </objects>
             <point key="canvasLocation" x="-1181" y="2049"/>
         </scene>
-        <!--Зміна групи-->
+        <!--Group change-->
         <scene sceneID="0X1-sK-OfH">
             <objects>
                 <tableViewController id="sTP-lx-VOm" customClass="GroupChangeController" customModule="Schedule_KPI" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,7 +166,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Пошук" id="jyk-Nh-G9d">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="jyk-Nh-G9d">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
@@ -195,8 +195,8 @@
                             <outlet property="delegate" destination="sTP-lx-VOm" id="Pog-sM-esl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Зміна групи" id="acT-Zf-9Z7">
-                        <barButtonItem key="rightBarButtonItem" title="Готово" id="JlN-TZ-3WG">
+                    <navigationItem key="navigationItem" title="Group change" id="acT-Zf-9Z7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="JlN-TZ-3WG">
                             <connections>
                                 <action selector="doneButtonPressed:" destination="sTP-lx-VOm" id="ySo-4G-pWM"/>
                                 <segue destination="tuU-dy-JNj" kind="unwind" unwindAction="unwindToThisViewControllerWithSegue:" id="ben-tL-7yC"/>
