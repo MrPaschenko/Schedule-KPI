@@ -11,8 +11,17 @@ struct ScheduleData: Decodable {
 }
 
 struct ScheduleDay: Decodable {
-    var day: String
+    var day: DayName
     var pairs: [Pair]
+}
+
+enum DayName: String, Decodable {
+    case monday = "Пн"
+    case tuesday = "Вв"
+    case wednesday = "Ср"
+    case thursday = "Чт"
+    case friday = "Пт"
+    case saturday = "Сб"
 }
 
 struct Pair: Decodable {

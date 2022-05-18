@@ -90,15 +90,21 @@ extension LessonsScheduleController {
         if scheduleWeek[section].pairs.isEmpty {
             return nil
         }
-        //TODO: Use enum
-        let dayNames = ["Пн": NSLocalizedString("Monday", comment: ""),
-                        "Вв": NSLocalizedString("Tuesday", comment: ""),
-                        "Ср": NSLocalizedString("Wednesday", comment: ""),
-                        "Чт": NSLocalizedString("Thursday", comment: ""),
-                        "Пт": NSLocalizedString("Friday", comment: ""),
-                        "Сб": NSLocalizedString("Saturday", comment: "")]
         
-        return dayNames[scheduleWeek[section].day]
+        switch scheduleWeek[section].day {
+        case .monday:
+            return NSLocalizedString("Monday", comment: "")
+        case .tuesday:
+            return NSLocalizedString("Tuesday", comment: "")
+        case .wednesday:
+            return NSLocalizedString("Wednesday", comment: "")
+        case .thursday:
+            return NSLocalizedString("Thursday", comment: "")
+        case .friday:
+            return NSLocalizedString("Friday", comment: "")
+        case .saturday:
+            return NSLocalizedString("Saturday", comment: "")
+        }
     }
 }
 
