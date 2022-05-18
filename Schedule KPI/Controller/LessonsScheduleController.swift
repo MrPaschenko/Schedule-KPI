@@ -7,7 +7,8 @@ class LessonsScheduleController: UITableViewController {
     var secondWeekSchedule = [ScheduleDay]()
     var scheduleWeek = [ScheduleDay]()
     var defaults = UserDefaults()
-    
+    var daysWithPairs = [ScheduleDay]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         scheduleManager.delegate = self
@@ -37,18 +38,24 @@ class LessonsScheduleController: UITableViewController {
 //MARK: - TableView
 extension LessonsScheduleController {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return scheduleWeek.count
+        for day in scheduleWeek {
+            if !day.pairs.isEmpty {
+                daysWithPairs.append(day)
+            }
+        }
+
+        return daysWithPairs.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return scheduleWeek[section].pairs.count
+        return daysWithPairs[section].pairs.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PairCell", for: indexPath)
         
         var configuration = cell.defaultContentConfiguration()
-        let pair = scheduleWeek[indexPath.section].pairs[indexPath.row]
+        let pair = daysWithPairs[indexPath.section].pairs[indexPath.row]
         let pairName = pair.type != "" ? "\(pair.name) (\(pair.type))" : pair.name
         configuration.text = pairName
         configuration.secondaryText = pair.time
@@ -58,7 +65,7 @@ extension LessonsScheduleController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let pair = scheduleWeek[indexPath.section].pairs[indexPath.row]
+        let pair = daysWithPairs[indexPath.section].pairs[indexPath.row]
         
         let alertTitle = pair.type != "" ? "\(pair.name) (\(pair.type))" : pair.name
         lazy var alertMessage: String = {
@@ -87,11 +94,11 @@ extension LessonsScheduleController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if scheduleWeek[section].pairs.isEmpty {
+        if daysWithPairs[section].pairs.isEmpty {
             return nil
         }
         
-        switch scheduleWeek[section].day {
+        switch daysWithPairs[section].day {
         case .monday:
             return NSLocalizedString("Monday", comment: "")
         case .tuesday:
