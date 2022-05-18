@@ -40,6 +40,6 @@ TBD
 
 ## Legal information
 
-Apple and Apple Logo are trademarks of Apple Inc.
+Apple and Apple logo are trademarks of Apple Inc.
 
 MIT license could be found in [LICENSE file](https://github.com/MrPaschenko/Schedule-KPI/blob/main/LICENSE)
