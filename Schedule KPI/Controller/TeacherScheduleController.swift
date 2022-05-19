@@ -1,26 +1,28 @@
 import Foundation
 import UIKit
 
-class LessonsScheduleController: UITableViewController {
-    var scheduleManager = ScheduleManager()
-    var firstWeekSchedule = [ScheduleDay]()
-    var secondWeekSchedule = [ScheduleDay]()
-    var scheduleWeek = [ScheduleDay]()
+class TeacherScheduleController: UITableViewController {
+    var teacherScheduleManager = TeacherScheduleManager()
+    var firstWeekSchedule = [TeacherScheduleDay]()
+    var secondWeekSchedule = [TeacherScheduleDay]()
+    var scheduleWeek = [TeacherScheduleDay]()
     var defaults = UserDefaults()
-    var daysWithPairs = [ScheduleDay]()
-
+    var daysWithPairs = [TeacherScheduleDay]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        scheduleManager.delegate = self
-        navigationItem.title = defaults.string(forKey: "selectedGroup") ?? "ІП-01"
-        scheduleManager.getSchedule(groupCode: defaults.string(forKey: "selectedGroup") ?? "ІП-01")
+        teacherScheduleManager.delegate = self
+        navigationItem.title = "Тарасюк Наталія Іванівна"
+        teacherScheduleManager.getTeacherSchedule(teacherId: "b9d3fd07-c342-4e6e-8e90-03dd46a78be3")
     }
     
     @IBAction func weekChanged(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
+            print(1)
             scheduleWeek = firstWeekSchedule
         case 1:
+            print(2)
             scheduleWeek = secondWeekSchedule
         default:
             scheduleWeek = firstWeekSchedule
@@ -29,14 +31,10 @@ class LessonsScheduleController: UITableViewController {
             self.tableView.reloadData()
         }
     }
-    
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
-        scheduleManager.getSchedule(groupCode: defaults.string(forKey: "selectedGroup") ?? "ІП-01")
-    }
 }
 
 //MARK: - TableView
-extension LessonsScheduleController {
+extension TeacherScheduleController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         daysWithPairs = []
         for day in scheduleWeek {
@@ -53,7 +51,7 @@ extension LessonsScheduleController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PairCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TeacherPairCell", for: indexPath)
         
         var configuration = cell.defaultContentConfiguration()
         let pair = daysWithPairs[indexPath.section].pairs[indexPath.row]
@@ -69,21 +67,7 @@ extension LessonsScheduleController {
         let pair = daysWithPairs[indexPath.section].pairs[indexPath.row]
         
         let alertTitle = pair.type != "" ? "\(pair.name) (\(pair.type))" : pair.name
-        lazy var alertMessage: String = {
-            if pair.teacherName != "" {
-                if pair.place != "" {
-                    return "\(pair.teacherName)\n\(pair.place)"
-                } else {
-                    return "\(pair.teacherName)"
-                }
-            } else {
-                if pair.place != "" {
-                    return "\(pair.place)"
-                } else {
-                    return ""
-                }
-            }
-        }()
+        lazy var alertMessage = pair.place != "" ? "\(pair.group)\n\(pair.place)" : pair.group
         
         let alert = UIAlertController(title: alertTitle,
                                       message: alertMessage,
@@ -92,6 +76,7 @@ extension LessonsScheduleController {
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .cancel))
         present(alert, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
+
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -117,22 +102,22 @@ extension LessonsScheduleController {
 }
 
 //MARK: - Networking
-extension LessonsScheduleController: ScheduleManagerDelegate {
-    func didUpdateSchedule(_ scheduleManager: ScheduleManager, schedule: Schedule) {
-        firstWeekSchedule = sortPairs(in: schedule.data.scheduleFirstWeek)
-        secondWeekSchedule = sortPairs(in: schedule.data.scheduleSecondWeek)
+extension TeacherScheduleController: TeacherScheduleManagerDelegate{
+    func didUpdateTeacherSchedule(_ teacherScheduleManager: TeacherScheduleManager, teacherSchedule: TeacherSchedule) {
+        firstWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleFirstWeek)
+        secondWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleSecondWeek)
         scheduleWeek = firstWeekSchedule
-
+        
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
     }
-    
+
     func didFailWithError(error: Error) {
         print(error)
     }
     
-    func sortPairs(in week: [ScheduleDay]) -> [ScheduleDay] {
+    func sortPairs(in week: [TeacherScheduleDay]) -> [TeacherScheduleDay] {
         var newWeek = week
         for i in 0...5 {
             //TODO: don't use !
@@ -141,3 +126,4 @@ extension LessonsScheduleController: ScheduleManagerDelegate {
         return newWeek
     }
 }
+
