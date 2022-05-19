@@ -28,11 +28,11 @@
             </objects>
             <point key="canvasLocation" x="-295" y="-186"/>
         </scene>
-        <!--Group schedule-->
+        <!--Group-->
         <scene sceneID="dr3-2W-7Ox">
             <objects>
                 <navigationController id="mtf-GE-rt6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Group schedule" image="person.3.fill" catalog="system" id="SS0-9F-Kh0"/>
+                    <tabBarItem key="tabBarItem" title="Group" image="person.3.fill" catalog="system" id="SS0-9F-Kh0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="P0j-Sb-9qK">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="-1181" y="601"/>
         </scene>
-        <!--Exams schedule-->
+        <!--Exams-->
         <scene sceneID="DLI-tQ-i6v">
             <objects>
                 <viewController id="C9L-c8-Hdt" sceneMemberID="viewController">
@@ -56,7 +56,7 @@
                         <viewLayoutGuide key="safeArea" id="Ys2-l8-WXa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Exams schedule" image="graduationcap.fill" catalog="system" id="FCF-IB-rXy"/>
+                    <tabBarItem key="tabBarItem" title="Exams" image="graduationcap.fill" catalog="system" id="FCF-IB-rXy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZk-7j-fyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,11 +181,11 @@
             </objects>
             <point key="canvasLocation" x="612" y="1300"/>
         </scene>
-        <!--Schedule for teachers-->
+        <!--Teacher-->
         <scene sceneID="kQD-iF-W8X">
             <objects>
                 <navigationController id="upe-F2-1WR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule for teachers" image="person.fill" catalog="system" id="LIg-hP-oiC"/>
+                    <tabBarItem key="tabBarItem" title="Teacher" image="person.fill" catalog="system" id="LIg-hP-oiC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z9m-fB-YQn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

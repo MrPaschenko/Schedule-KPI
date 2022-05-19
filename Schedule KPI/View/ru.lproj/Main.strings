@@ -1,10 +1,10 @@
-"FCF-IB-rXy.title" = "Расписание сессии";
+"FCF-IB-rXy.title" = "Сессия";
 
-"SS0-9F-Kh0.title" = "Расписание группы";
+"SS0-9F-Kh0.title" = "Группа";
 
 "acT-Zf-9Z7.title" = "Изменение группы";
 
-"LIg-hP-oiC.title" = "Расписание для преподавателей";
+"LIg-hP-oiC.title" = "Преподаватель";
 
 "i6j-MN-kah.title" = "Название группы";
 
@@ -14,4 +14,4 @@
 
 "s98-Xb-xmT.segmentTitles[1]" = "2";
 
-"lc0-zh-gYl.title" = "Имя преподавателя"
+"lc0-zh-gYl.title" = "Имя преподавателя";
