@@ -1,27 +1,17 @@
-
-/* Class = "UITabBarItem"; title = "Exams schedule"; ObjectID = "FCF-IB-rXy"; */
 "FCF-IB-rXy.title" = "Расписание сессии";
 
-/* Class = "UITabBarItem"; title = "Group schedule"; ObjectID = "SS0-9F-Kh0"; */
 "SS0-9F-Kh0.title" = "Расписание группы";
 
-/* Class = "UIBarButtonItem"; title = "Change group"; ObjectID = "TkT-30-AhO"; */
-"TkT-30-AhO.title" = "Изменить группу";
-
-/* Class = "UINavigationItem"; title = "Group change"; ObjectID = "acT-Zf-9Z7"; */
 "acT-Zf-9Z7.title" = "Изменение группы";
 
-/* Class = "UITabBarItem"; title = "Schedule for teachers"; ObjectID = "enG-xv-aSW"; */
-"enG-xv-aSW.title" = "Расписание для преподавателей";
+"LIg-hP-oiC.title" = "Расписание для преподавателей";
 
-/* Class = "UINavigationItem"; title = "Group name"; ObjectID = "i6j-MN-kah"; */
 "i6j-MN-kah.title" = "Название группы";
 
-/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "jyk-Nh-G9d"; */
 "jyk-Nh-G9d.placeholder" = "Поиск";
 
-/* Class = "UISegmentedControl"; s98-Xb-xmT.segmentTitles[0] = "1"; ObjectID = "s98-Xb-xmT"; */
 "s98-Xb-xmT.segmentTitles[0]" = "1";
 
-/* Class = "UISegmentedControl"; s98-Xb-xmT.segmentTitles[1] = "2"; ObjectID = "s98-Xb-xmT"; */
 "s98-Xb-xmT.segmentTitles[1]" = "2";
+
+"lc0-zh-gYl.title" = "Имя преподавателя"

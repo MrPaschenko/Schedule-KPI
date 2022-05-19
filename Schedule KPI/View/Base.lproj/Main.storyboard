@@ -21,7 +21,7 @@
                     <connections>
                         <segue destination="mtf-GE-rt6" kind="relationship" relationship="viewControllers" id="DYA-W9-0dm"/>
                         <segue destination="C9L-c8-Hdt" kind="relationship" relationship="viewControllers" id="BLW-pq-dm1"/>
-                        <segue destination="qT9-VG-HTT" kind="relationship" relationship="viewControllers" id="ZLb-fq-Qbc"/>
+                        <segue destination="upe-F2-1WR" kind="relationship" relationship="viewControllers" id="T0h-6R-28Z"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKi-cm-oJR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -62,23 +62,6 @@
             </objects>
             <point key="canvasLocation" x="-296" y="601"/>
         </scene>
-        <!--Schedule for teachers-->
-        <scene sceneID="vGt-AN-Zuv">
-            <objects>
-                <viewController id="qT9-VG-HTT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="svw-hX-3cB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Opa-Ee-Neh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Schedule for teachers" image="person.fill" catalog="system" id="enG-xv-aSW"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qzv-lp-sla" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="516" y="601"/>
-        </scene>
         <!--Group name-->
         <scene sceneID="aZu-Ss-Ftn">
             <objects>
@@ -118,7 +101,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Group name" id="i6j-MN-kah">
-                        <barButtonItem key="leftBarButtonItem" title="Change group" id="TkT-30-AhO">
+                        <barButtonItem key="leftBarButtonItem" image="square.and.pencil" catalog="system" id="TkT-30-AhO">
                             <connections>
                                 <segue destination="x2c-iO-8iK" kind="presentation" id="H8y-ga-pQp"/>
                             </connections>
@@ -141,6 +124,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1k-3h-U3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1181" y="1300"/>
+        </scene>
+        <!--Teacher name-->
+        <scene sceneID="xKk-uw-Z1B">
+            <objects>
+                <tableViewController id="VjF-iz-Vtt" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="OeT-oD-Id0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PairForTeacherCell" textLabel="WHy-gz-2MW" detailTextLabel="2tG-Lb-Cje" style="IBUITableViewCellStyleSubtitle" id="zpF-lS-zfg">
+                                <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zpF-lS-zfg" id="fZS-Qa-MzR">
+                                    <rect key="frame" x="0.0" y="0.0" width="345.5" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WHy-gz-2MW">
+                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2tG-Lb-Cje">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VjF-iz-Vtt" id="1I1-WT-kr3"/>
+                            <outlet property="delegate" destination="VjF-iz-Vtt" id="bh0-nQ-zM2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Teacher name" id="lc0-zh-gYl">
+                        <barButtonItem key="leftBarButtonItem" image="square.and.pencil" catalog="system" id="ts7-eG-eFp"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="d0d-Sn-Amz">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Iol-LY-U2o">
+                                <rect key="frame" x="302" y="5.5" width="92" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                </segments>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slW-Yo-vW9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="1300"/>
+        </scene>
+        <!--Schedule for teachers-->
+        <scene sceneID="kQD-iF-W8X">
+            <objects>
+                <navigationController id="upe-F2-1WR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule for teachers" image="person.fill" catalog="system" id="LIg-hP-oiC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z9m-fB-YQn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VjF-iz-Vtt" kind="relationship" relationship="rootViewController" id="4EX-fP-BeH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oU7-Sy-JRU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="601"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bmh-zP-I6P">
@@ -217,6 +274,7 @@
         <image name="graduationcap.fill" catalog="system" width="128" height="108"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
