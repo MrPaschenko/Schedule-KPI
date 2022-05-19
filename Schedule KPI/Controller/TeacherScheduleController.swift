@@ -12,17 +12,15 @@ class TeacherScheduleController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         teacherScheduleManager.delegate = self
-        navigationItem.title = "Тарасюк Наталія Іванівна"
-        teacherScheduleManager.getTeacherSchedule(teacherId: "b9d3fd07-c342-4e6e-8e90-03dd46a78be3")
+        navigationItem.title = defaults.string(forKey: "selectedTeacherName") ?? "Аушева Наталія Миколаївна"
+        teacherScheduleManager.getTeacherSchedule(teacherId: defaults.string(forKey: "selectedTeacherId") ?? "231bc414-8801-44f0-bb44-ad66923c3c0b")
     }
     
     @IBAction func weekChanged(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            print(1)
             scheduleWeek = firstWeekSchedule
         case 1:
-            print(2)
             scheduleWeek = secondWeekSchedule
         default:
             scheduleWeek = firstWeekSchedule
@@ -30,6 +28,11 @@ class TeacherScheduleController: UITableViewController {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+    
+    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+        navigationItem.title = defaults.string(forKey: "selectedTeacherName") ?? "Аушева Наталія Миколаївна"
+        teacherScheduleManager.getTeacherSchedule(teacherId: defaults.string(forKey: "selectedTeacherId") ?? "231bc414-8801-44f0-bb44-ad66923c3c0b")
     }
 }
 

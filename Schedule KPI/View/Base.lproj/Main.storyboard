@@ -295,7 +295,7 @@
         <!--Teacher change-->
         <scene sceneID="ikZ-XL-Ijn">
             <objects>
-                <tableViewController id="RE1-rw-s0d" customClass="GroupChangeController" customModule="Schedule_KPI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RE1-rw-s0d" customClass="TeacherChangeController" customModule="Schedule_KPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xSB-4X-ZpK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,7 +306,7 @@
                             <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" textLabel="wwX-ZS-o1u" style="IBUITableViewCellStyleDefault" id="qcd-6j-WWk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeacherCell" textLabel="wwX-ZS-o1u" style="IBUITableViewCellStyleDefault" id="qcd-6j-WWk">
                                 <rect key="frame" x="0.0" y="95.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qcd-6j-WWk" id="u6A-Bn-5CD">
@@ -338,7 +338,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchBar" destination="4Dy-VZ-ECM" id="ccC-oR-QkU"/>
+                        <outlet property="searchBar" destination="4Dy-VZ-ECM" id="gyd-k4-Rsw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0H-nP-cU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

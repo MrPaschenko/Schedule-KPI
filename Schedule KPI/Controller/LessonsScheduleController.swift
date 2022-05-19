@@ -31,6 +31,7 @@ class LessonsScheduleController: UITableViewController {
     }
     
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+        navigationItem.title = defaults.string(forKey: "selectedGroup") ?? "ІП-01"
         scheduleManager.getSchedule(groupCode: defaults.string(forKey: "selectedGroup") ?? "ІП-01")
     }
 }
