@@ -12,6 +12,7 @@ class TeacherChangeController: UITableViewController {
         super.viewDidLoad()
         teacherListManager.delegate = self
         teacherListManager.getTeacherList()
+        searchBar.delegate = self
     }
 }
 
@@ -72,5 +73,26 @@ extension TeacherChangeController: TeacherListManagerDelegate {
         }
         newTeachers.sort { $0.name < $1.name }
         return newTeachers
+    }
+}
+
+//MARK: - Search
+extension TeacherChangeController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredTeachers = searchText == "" ? teachers : []
+        
+        for teacher in teachers {
+            if teacher.name.uppercased().contains(searchText.uppercased()) {
+                filteredTeachers.append(teacher)
+            }
+        }
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
     }
 }
