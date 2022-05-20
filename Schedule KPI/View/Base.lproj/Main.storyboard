@@ -20,7 +20,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="mtf-GE-rt6" kind="relationship" relationship="viewControllers" id="DYA-W9-0dm"/>
-                        <segue destination="C9L-c8-Hdt" kind="relationship" relationship="viewControllers" id="BLW-pq-dm1"/>
                         <segue destination="upe-F2-1WR" kind="relationship" relationship="viewControllers" id="T0h-6R-28Z"/>
                     </connections>
                 </tabBarController>
