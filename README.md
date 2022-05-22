@@ -8,7 +8,7 @@ Simple iOS application which uses [Schedule KPI API](https://github.com/kpi-ua/s
 
 ## Download & Run
 
-![Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917](https://user-images.githubusercontent.com/64316080/168581675-cfc29e4a-410c-4664-9213-31f11560813c.svg) (soon)
+[![Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917](https://user-images.githubusercontent.com/64316080/168581675-cfc29e4a-410c-4664-9213-31f11560813c.svg)](https://apps.apple.com/us/app/schedule-kpi/id1625484300)
 
 1. Clone this repository
 
