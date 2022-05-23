@@ -3,7 +3,6 @@
 Simple iOS application which uses [Schedule KPI API](https://github.com/kpi-ua/schedule.kpi.ua) and has following features:
 
 - Group schedule
-- Exams schedule
 - Teacher schedule
 
 ## Download & Run
@@ -29,10 +28,6 @@ git clone https://github.com/MrPaschenko/Schedule-KPI
 | Two-week schedule  | Detailed info | Change group |
 | ------------- | ------------- | ------------- |
 |  |  |  |
-
-### Exams schedule
-
-TBD
 
 ### Teacher schedule
 
