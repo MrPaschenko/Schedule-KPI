@@ -72,6 +72,39 @@ extension TeacherChangeController: TeacherListManagerDelegate {
             }
         }
         newTeachers.sort { $0.name < $1.name }
+        
+        var teachersStartingWithI = [Teacher]()
+        var lastIndexOfTeachersStartingWithZ = Int()
+        
+        var teachersStartingWithE = [Teacher]()
+        var lastIndexOfTeachersStartingWithD = Int()
+        
+        for teacher in newTeachers {
+            if teacher.name.starts(with: "І") {
+                teachersStartingWithI.append(teacher)
+                newTeachers.remove(at: newTeachers.firstIndex(of: teacher)!)
+            }
+            if teacher.name.starts(with: "З") {
+                lastIndexOfTeachersStartingWithZ = newTeachers.firstIndex(of: teacher)!
+            }
+            
+            if teacher.name.starts(with: "Є") {
+                teachersStartingWithE.append(teacher)
+                newTeachers.remove(at: newTeachers.firstIndex(of: teacher)!)
+            }
+            if teacher.name.starts(with: "Д") {
+                lastIndexOfTeachersStartingWithD = newTeachers.firstIndex(of: teacher)!
+            }
+        }
+        
+        for teacher in teachersStartingWithI {
+            newTeachers.insert(teacher, at: lastIndexOfTeachersStartingWithZ + 1)
+        }
+        
+        for teacher in teachersStartingWithE {
+            newTeachers.insert(teacher, at: lastIndexOfTeachersStartingWithD + 1)
+        }
+        
         return newTeachers
     }
 }
