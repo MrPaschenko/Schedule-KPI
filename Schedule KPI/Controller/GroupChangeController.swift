@@ -64,6 +64,24 @@ extension GroupChangeController: GroupListManagerDelegate {
     func sortGroups(groups: [Group]) -> [Group] {
         var newGroups = groups
         newGroups.sort { $0.name < $1.name }
+        
+        var groupsStaringWithI = [Group]()
+        var lastIndexOfGroupsStartingWithZ = Int()
+        
+        for group in newGroups {
+            if group.name.starts(with: "І") {
+                groupsStaringWithI.append(group)
+                newGroups.remove(at: newGroups.firstIndex(of: group)!)
+            }
+            if group.name.starts(with: "З") {
+                lastIndexOfGroupsStartingWithZ = newGroups.firstIndex(of: group)!
+            }
+        }
+        
+        for group in groupsStaringWithI {
+            newGroups.insert(group, at: lastIndexOfGroupsStartingWithZ + 1)
+        }
+        
         return newGroups
     }
 }
