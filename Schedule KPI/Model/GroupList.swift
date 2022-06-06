@@ -5,6 +5,7 @@ struct GroupList: Decodable {
 }
 
 struct Group: Decodable, Equatable {
-    var name: String
     var id: String
+    var name: String
+    var faculty: String
 }
