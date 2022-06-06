@@ -37,8 +37,6 @@ extension TeacherChangeController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("name is \(filteredTeachers[indexPath.row].name)")
-        print("id is \(filteredTeachers[indexPath.row].id)")
         defaults.set(filteredTeachers[indexPath.row].id, forKey: "selectedTeacherId")
         defaults.set(filteredTeachers[indexPath.row].name, forKey: "selectedTeacherName")
         tableView.reloadData()
