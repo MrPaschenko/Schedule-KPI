@@ -32,15 +32,17 @@ extension GroupChangeController {
         let group = filteredGroups[indexPath.row]
         let groupName = group.name
         configuration.text = groupName
-        if let selectedGroup = defaults.string(forKey: "selectedGroup") {
-            cell.accessoryType = groupName == selectedGroup ? .checkmark : .none
+        if let selectedGroupId = defaults.string(forKey: "selectedGroupId") {
+            cell.accessoryType = group.id == selectedGroupId ? .checkmark : .none
         }
         cell.contentConfiguration = configuration
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        defaults.set(filteredGroups[indexPath.row].name, forKey: "selectedGroup")
+        defaults.set(filteredGroups[indexPath.row].name, forKey: "selectedGroupName")
+        defaults.set(filteredGroups[indexPath.row].id, forKey: "selectedGroupId")
+        defaults.set(filteredGroups[indexPath.row].faculty, forKey: "selectedGroupFaculty")
         tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
     }

@@ -10,8 +10,8 @@ struct ScheduleManager {
     let scheduleURL = "https://schedule.kpi.ua/api/schedule/lessons"
     var delegate: ScheduleManagerDelegate?
     
-    func getSchedule(groupCode: String) {
-        let urlString = "\(scheduleURL)?groupName=\(groupCode)"
+    func getSchedule(groupId: String) {
+        let urlString = "\(scheduleURL)?groupId=\(groupId)"
         if let safeUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
             performRequest(with: safeUrlString)
         }

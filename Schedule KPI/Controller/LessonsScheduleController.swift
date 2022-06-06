@@ -12,8 +12,8 @@ class LessonsScheduleController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scheduleManager.delegate = self
-        navigationItem.title = defaults.string(forKey: "selectedGroup") ?? "ІП-01"
-        scheduleManager.getSchedule(groupCode: defaults.string(forKey: "selectedGroup") ?? "ІП-01")
+        navigationItem.title = defaults.string(forKey: "selectedGroupName") ?? "ІП-01"
+        scheduleManager.getSchedule(groupId: defaults.string(forKey: "selectedGroupId") ?? "37dc2fc9-d044-4860-8170-5ce68a55a9b5")
     }
     
     @IBAction func weekChanged(_ sender: UISegmentedControl) {
@@ -31,8 +31,8 @@ class LessonsScheduleController: UITableViewController {
     }
     
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
-        navigationItem.title = defaults.string(forKey: "selectedGroup") ?? "ІП-01"
-        scheduleManager.getSchedule(groupCode: defaults.string(forKey: "selectedGroup") ?? "ІП-01")
+        navigationItem.title = defaults.string(forKey: "selectedGroupName") ?? "ІП-01"
+        scheduleManager.getSchedule(groupId: defaults.string(forKey: "selectedGroupId") ?? "37dc2fc9-d044-4860-8170-5ce68a55a9b5")
     }
 }
 
