@@ -30,8 +30,8 @@ extension GroupChangeController {
         
         var configuration = cell.defaultContentConfiguration()
         let group = filteredGroups[indexPath.row]
-        let groupName = group.name
-        configuration.text = groupName
+        configuration.text = group.name
+        configuration.secondaryText = group.faculty
         if let selectedGroupId = defaults.string(forKey: "selectedGroupId") {
             cell.accessoryType = group.id == selectedGroupId ? .checkmark : .none
         }
