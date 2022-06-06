@@ -130,7 +130,7 @@ extension GroupChangeController: UISearchBarDelegate {
         filteredGroups = searchText == "" ? groups : []
         
         for group in groups {
-            if group.name.uppercased().contains(searchTextWithoutLatin.uppercased()) {
+            if group.name.uppercased().contains(searchTextWithoutLatin.uppercased()) || group.faculty.uppercased().contains(searchTextWithoutLatin.uppercased()) {
                 filteredGroups.append(group)
             }
         }
