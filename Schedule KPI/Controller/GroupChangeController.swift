@@ -30,17 +30,19 @@ extension GroupChangeController {
         
         var configuration = cell.defaultContentConfiguration()
         let group = filteredGroups[indexPath.row]
-        let groupName = group.name
-        configuration.text = groupName
-        if let selectedGroup = defaults.string(forKey: "selectedGroup") {
-            cell.accessoryType = groupName == selectedGroup ? .checkmark : .none
+        configuration.text = group.name
+        configuration.secondaryText = group.faculty
+        if let selectedGroupId = defaults.string(forKey: "selectedGroupId") {
+            cell.accessoryType = group.id == selectedGroupId ? .checkmark : .none
         }
         cell.contentConfiguration = configuration
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        defaults.set(filteredGroups[indexPath.row].name, forKey: "selectedGroup")
+        defaults.set(filteredGroups[indexPath.row].name, forKey: "selectedGroupName")
+        defaults.set(filteredGroups[indexPath.row].id, forKey: "selectedGroupId")
+        defaults.set(filteredGroups[indexPath.row].faculty, forKey: "selectedGroupFaculty")
         tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -128,7 +130,7 @@ extension GroupChangeController: UISearchBarDelegate {
         filteredGroups = searchText == "" ? groups : []
         
         for group in groups {
-            if group.name.uppercased().contains(searchTextWithoutLatin.uppercased()) {
+            if group.name.uppercased().contains(searchTextWithoutLatin.uppercased()) || group.faculty.uppercased().contains(searchTextWithoutLatin.uppercased()) {
                 filteredGroups.append(group)
             }
         }
