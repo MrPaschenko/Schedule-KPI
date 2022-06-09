@@ -17,9 +17,9 @@ git clone https://github.com/MrPaschenko/Schedule-KPI
 
 2. Open Schedule KPI.xcodeproj in Xcode
 
-3. Select some iOS device and hit run button in Xcode
+3. Select some iOS/iPadOS device and hit run button in Xcode
 
-> Minimal supported iOS version is 14.0
+> Minimal supported iOS/iPadOS version is 14.0
 
 ## Use
 
