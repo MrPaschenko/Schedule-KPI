@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "2tG-Lb-Cje"; */
+"2tG-Lb-Cje.text" = "Zaman";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "4Dy-VZ-ECM"; */
+"4Dy-VZ-ECM.placeholder" = "Arama";
+
+/* Class = "UITabBarItem"; title = "Exams"; ObjectID = "FCF-IB-rXy"; */
+"FCF-IB-rXy.title" = "Sınavlar";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "GBF-X1-KPN"; */
+"GBF-X1-KPN.text" = "Alt yazı";
+
+/* Class = "UISegmentedControl"; Iol-LY-U2o.segmentTitles[0] = "1"; ObjectID = "Iol-LY-U2o"; */
+"Iol-LY-U2o.segmentTitles[0]" = "1";
+
+/* Class = "UISegmentedControl"; Iol-LY-U2o.segmentTitles[1] = "2"; ObjectID = "Iol-LY-U2o"; */
+"Iol-LY-U2o.segmentTitles[1]" = "2";
+
+/* Class = "UITabBarItem"; title = "Teacher"; ObjectID = "LIg-hP-oiC"; */
+"LIg-hP-oiC.title" = "Öğretmen";
+
+/* Class = "UINavigationItem"; title = "Teacher change"; ObjectID = "QhQ-ev-vw5"; */
+"QhQ-ev-vw5.title" = "Öğretmen değişikliği";
+
+/* Class = "UITabBarItem"; title = "Group"; ObjectID = "SS0-9F-Kh0"; */
+"SS0-9F-Kh0.title" = "Grup";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "TBH-hY-BAH"; */
+"TBH-hY-BAH.text" = "Başlık";
+
+/* Class = "UILabel"; text = "Pair name"; ObjectID = "WHy-gz-2MW"; */
+"WHy-gz-2MW.text" = "Çift adı";
+
+/* Class = "UINavigationItem"; title = "Group change"; ObjectID = "acT-Zf-9Z7"; */
+"acT-Zf-9Z7.title" = "Grup değişikliği";
+
+/* Class = "UINavigationItem"; title = "Group name"; ObjectID = "i6j-MN-kah"; */
+"i6j-MN-kah.title" = "Grup ismi";
+
+/* Class = "UILabel"; text = "Pair name"; ObjectID = "jPF-JL-wZ7"; */
+"jPF-JL-wZ7.text" = "Çift adı";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "jyk-Nh-G9d"; */
+"jyk-Nh-G9d.placeholder" = "Arama";
+
+/* Class = "UINavigationItem"; title = "Teacher name"; ObjectID = "lc0-zh-gYl"; */
+"lc0-zh-gYl.title" = "Öğretmen adı";
+
+/* Class = "UISegmentedControl"; s98-Xb-xmT.segmentTitles[0] = "1"; ObjectID = "s98-Xb-xmT"; */
+"s98-Xb-xmT.segmentTitles[0]" = "1";
+
+/* Class = "UISegmentedControl"; s98-Xb-xmT.segmentTitles[1] = "2"; ObjectID = "s98-Xb-xmT"; */
+"s98-Xb-xmT.segmentTitles[1]" = "2";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "xGR-0T-AJW"; */
+"xGR-0T-AJW.text" = "Zaman";
