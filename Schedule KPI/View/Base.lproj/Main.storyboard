@@ -100,7 +100,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Group name" id="i6j-MN-kah">
-                        <barButtonItem key="leftBarButtonItem" image="square.and.pencil" catalog="system" id="TkT-30-AhO">
+                        <barButtonItem key="leftBarButtonItem" image="magnifyingglass" catalog="system" id="TkT-30-AhO">
                             <connections>
                                 <segue destination="x2c-iO-8iK" kind="presentation" id="H8y-ga-pQp"/>
                             </connections>
@@ -163,7 +163,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Teacher name" id="lc0-zh-gYl">
-                        <barButtonItem key="leftBarButtonItem" image="square.and.pencil" catalog="system" id="ts7-eG-eFp">
+                        <barButtonItem key="leftBarButtonItem" image="magnifyingglass" catalog="system" id="ts7-eG-eFp">
                             <connections>
                                 <segue destination="NgZ-ai-taN" kind="presentation" id="4Lz-Cl-hzG"/>
                             </connections>
@@ -355,9 +355,9 @@
     </scenes>
     <resources>
         <image name="graduationcap.fill" catalog="system" width="128" height="108"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
