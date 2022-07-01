@@ -19,7 +19,7 @@ git clone https://github.com/MrPaschenko/Schedule-KPI
 
 3. Select some iOS/iPadOS device and hit run button in Xcode
 
-> Minimal supported iOS/iPadOS version is 14.0
+> **Note**: Minimal supported iOS/iPadOS version is 14.0
 
 ## Use
 
