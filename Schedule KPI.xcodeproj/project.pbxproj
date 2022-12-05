@@ -34,9 +34,6 @@
 		A24C9E8C2836A14200698FDA /* TeacherChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherChangeController.swift; sourceTree = "<group>"; };
 		A24C9E8E2836A54600698FDA /* TeacherList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherList.swift; sourceTree = "<group>"; };
 		A24C9E902836A60200698FDA /* TeacherListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListManager.swift; sourceTree = "<group>"; };
-		A24C9EBF2850E49C00698FDA /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
-		A24C9EC02850E4CA00698FDA /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		A24C9EC12850E4CA00698FDA /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A27F647B281763DD00D6791D /* Schedule KPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schedule KPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27F647E281763DD00D6791D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27F6480281763DD00D6791D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,7 +177,6 @@
 				Base,
 				ru,
 				uk,
-				tr,
 			);
 			mainGroup = A27F6472281763DD00D6791D;
 			productRefGroup = A27F647C281763DD00D6791D /* Products */;
@@ -237,7 +233,6 @@
 				A27F6485281763DD00D6791D /* Base */,
 				A2EC54C92835839F00F227D6 /* ru */,
 				A2EC54CB2835843700F227D6 /* uk */,
-				A24C9EBF2850E49C00698FDA /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -248,7 +243,6 @@
 				A27F648A281763E000D6791D /* Base */,
 				A2EC54CA2835839F00F227D6 /* ru */,
 				A2EC54CC2835843700F227D6 /* uk */,
-				A24C9EC02850E4CA00698FDA /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -259,7 +253,6 @@
 				A2EC54D02835859A00F227D6 /* en */,
 				A2EC54D22835859B00F227D6 /* ru */,
 				A2EC54D32835859C00F227D6 /* uk */,
-				A24C9EC12850E4CA00698FDA /* tr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
