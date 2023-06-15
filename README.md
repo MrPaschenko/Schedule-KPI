@@ -1,5 +1,7 @@
 # Schedule KPI
 
+[![Downloads](https://img.shields.io/badge/Downloads-624-brightgreen.svg)](https://your-download-link)
+
 Simple iOS/iPadOS application which uses [Schedule KPI API](https://github.com/kpi-ua/schedule.kpi.ua) and has following features:
 
 - Group schedule
