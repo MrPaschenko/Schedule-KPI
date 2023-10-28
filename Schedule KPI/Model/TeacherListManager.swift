@@ -7,7 +7,7 @@ protocol TeacherListManagerDelegate {
 }
 
 struct TeacherListManager {
-    let teacherListURL = "https://schedule.kpi.ua/api/schedule/lecturer/list"
+    let teacherListURL = "https://api.campus.kpi.ua/schedule/lecturer/list"
     var delegate: TeacherListManagerDelegate?
     
     func getTeacherList() {

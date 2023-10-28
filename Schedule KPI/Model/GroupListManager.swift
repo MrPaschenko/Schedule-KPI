@@ -7,7 +7,7 @@ protocol GroupListManagerDelegate {
 }
 
 struct GroupListManager {
-    let scheduleURL = "https://schedule.kpi.ua/api/schedule/groups"
+    let scheduleURL = "https://api.campus.kpi.ua/schedule/groups"
     var delegate: GroupListManagerDelegate?
     
     func getGroupList() {
