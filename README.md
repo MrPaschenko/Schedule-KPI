@@ -1,6 +1,6 @@
 # Schedule KPI
 
-![Downloads](https://img.shields.io/badge/Downloads-959-brightgreen.svg)
+![Downloads](https://img.shields.io/badge/Downloads-1049-brightgreen.svg)
 
 Simple iOS/iPadOS application which uses [Schedule KPI API](https://github.com/kpi-ua/schedule.kpi.ua) and has following features:
 
