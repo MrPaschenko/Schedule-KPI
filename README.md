@@ -9,7 +9,9 @@ Simple iOS/iPadOS application which uses [Schedule KPI API](https://github.com/k
 
 ## Download & Run
 
-[![Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917](https://user-images.githubusercontent.com/64316080/168581675-cfc29e4a-410c-4664-9213-31f11560813c.svg)](https://apps.apple.com/app/id1625484300)
+[<img src="https://github.com/user-attachments/assets/8963b828-6e5f-471e-8f43-73e1bfc0cc5f"
+     alt="Download on the App Store"
+     height="50">](https://apps.apple.com/app/id1625484300)
 
 1. Clone this repository
 
