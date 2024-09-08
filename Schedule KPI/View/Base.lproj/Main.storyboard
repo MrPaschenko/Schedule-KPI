@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jsv-ZK-FhG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jsv-ZK-FhG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,7 +33,7 @@
                     <tabBarItem key="tabBarItem" title="Group" image="person.3.fill" catalog="system" id="SS0-9F-Kh0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="P0j-Sb-9qK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -45,22 +44,6 @@
             </objects>
             <point key="canvasLocation" x="-1181" y="601"/>
         </scene>
-        <!--Exams-->
-        <scene sceneID="DLI-tQ-i6v">
-            <objects>
-                <viewController id="C9L-c8-Hdt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4hX-ir-1Pv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Ys2-l8-WXa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Exams" image="bed.double.fill" catalog="system" id="FCF-IB-rXy"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QZk-7j-fyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-296" y="601"/>
-        </scene>
         <!--Group name-->
         <scene sceneID="aZu-Ss-Ftn">
             <objects>
@@ -70,10 +53,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PairCell" textLabel="jPF-JL-wZ7" detailTextLabel="xGR-0T-AJW" style="IBUITableViewCellStyleSubtitle" id="CA9-W7-i86">
-                                <rect key="frame" x="20" y="32" width="374" height="43.5"/>
+                                <rect key="frame" x="20" y="38" width="374" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CA9-W7-i86" id="7rF-Zq-BIy">
-                                    <rect key="frame" x="0.0" y="0.0" width="345.5" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="343.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Pair name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jPF-JL-wZ7">
@@ -102,7 +85,7 @@
                     <navigationItem key="navigationItem" title="Group name" id="i6j-MN-kah">
                         <barButtonItem key="leftBarButtonItem" image="arrow.2.squarepath" catalog="system" id="TkT-30-AhO">
                             <connections>
-                                <segue destination="x2c-iO-8iK" kind="presentation" id="H8y-ga-pQp"/>
+                                <action selector="changeGroupButtonPressed:" destination="GI2-gp-xpN" id="lE9-xI-D4n"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="TbT-JX-o1J">
@@ -119,6 +102,9 @@
                             </segmentedControl>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="sTP-lx-VOm" kind="presentation" identifier="lessonsScheduleToGroupChange" id="LIG-UR-47m"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1k-3h-U3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,10 +119,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TeacherPairCell" textLabel="WHy-gz-2MW" detailTextLabel="2tG-Lb-Cje" style="IBUITableViewCellStyleSubtitle" id="zpF-lS-zfg">
-                                <rect key="frame" x="20" y="32" width="374" height="43.5"/>
+                                <rect key="frame" x="20" y="38" width="374" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zpF-lS-zfg" id="fZS-Qa-MzR">
-                                    <rect key="frame" x="0.0" y="0.0" width="345.5" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="343.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Pair name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WHy-gz-2MW">
@@ -165,10 +151,10 @@
                     <navigationItem key="navigationItem" title="Teacher name" id="lc0-zh-gYl">
                         <barButtonItem key="leftBarButtonItem" image="arrow.2.squarepath" catalog="system" id="ts7-eG-eFp">
                             <connections>
-                                <segue destination="NgZ-ai-taN" kind="presentation" id="4Lz-Cl-hzG"/>
+                                <action selector="changeTeacherButtonPressed:" destination="VjF-iz-Vtt" id="IGb-FL-rC9"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="d0d-Sn-Amz">
+                        <barButtonItem key="rightBarButtonItem" id="d0d-Sn-Amz">
                             <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Iol-LY-U2o">
                                 <rect key="frame" x="302" y="5.5" width="92" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -182,6 +168,9 @@
                             </segmentedControl>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="RE1-rw-s0d" kind="presentation" identifier="teacherScheduleToTeacherChange" id="p3V-fp-Kpf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slW-Yo-vW9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,7 +183,7 @@
                     <tabBarItem key="tabBarItem" title="Teacher" image="person.fill" catalog="system" id="LIg-hP-oiC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Z9m-fB-YQn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -205,28 +194,12 @@
             </objects>
             <point key="canvasLocation" x="612" y="601"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bmh-zP-I6P">
-            <objects>
-                <navigationController id="x2c-iO-8iK" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="erZ-E2-c3f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="sTP-lx-VOm" kind="relationship" relationship="rootViewController" id="eqw-oK-IMU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kxu-CC-DW3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1181" y="2049"/>
-        </scene>
         <!--Group change-->
         <scene sceneID="0X1-sK-OfH">
             <objects>
                 <tableViewController id="sTP-lx-VOm" customClass="GroupChangeController" customModule="Schedule_KPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="70F-aR-TmU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="jyk-Nh-G9d">
@@ -236,7 +209,7 @@
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" textLabel="TBH-hY-BAH" detailTextLabel="GBF-X1-KPN" style="IBUITableViewCellStyleSubtitle" id="tOx-Do-Ber">
-                                <rect key="frame" x="0.0" y="95.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="101" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tOx-Do-Ber" id="zWA-k9-QPi">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -265,45 +238,21 @@
                             <outlet property="delegate" destination="sTP-lx-VOm" id="Pog-sM-esl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Group change" id="acT-Zf-9Z7">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="JlN-TZ-3WG">
-                            <connections>
-                                <action selector="doneButtonPressed:" destination="sTP-lx-VOm" id="ySo-4G-pWM"/>
-                                <segue destination="tuU-dy-JNj" kind="unwind" unwindAction="unwindToThisViewControllerWithSegue:" id="ben-tL-7yC"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Group change" id="acT-Zf-9Z7"/>
                     <connections>
                         <outlet property="searchBar" destination="jyk-Nh-G9d" id="9Hd-B2-Kd9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9J-WW-ovS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="tuU-dy-JNj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1181" y="2817"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="jWA-5y-vZE">
-            <objects>
-                <navigationController id="NgZ-ai-taN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bKW-VJ-J0b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="RE1-rw-s0d" kind="relationship" relationship="rootViewController" id="Txn-cz-fe7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XR4-dT-Jjx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="612" y="2048"/>
+            <point key="canvasLocation" x="-1181" y="2038"/>
         </scene>
         <!--Teacher change-->
         <scene sceneID="ikZ-XL-Ijn">
             <objects>
                 <tableViewController id="RE1-rw-s0d" customClass="TeacherChangeController" customModule="Schedule_KPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xSB-4X-ZpK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="4Dy-VZ-ECM">
@@ -313,7 +262,7 @@
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeacherCell" textLabel="wwX-ZS-o1u" style="IBUITableViewCellStyleDefault" id="qcd-6j-WWk">
-                                <rect key="frame" x="0.0" y="95.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="101" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qcd-6j-WWk" id="u6A-Bn-5CD">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -335,28 +284,19 @@
                             <outlet property="delegate" destination="RE1-rw-s0d" id="GG6-SY-7MB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Teacher change" id="QhQ-ev-vw5">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="BGq-TH-k0i">
-                            <connections>
-                                <action selector="doneButtonPressed:" destination="RE1-rw-s0d" id="JBJ-Bv-reA"/>
-                                <segue destination="Ztp-f7-OCK" kind="unwind" unwindAction="unwindToThisViewControllerWithSegue:" id="uFJ-n2-tpC"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Teacher change" id="QhQ-ev-vw5"/>
                     <connections>
                         <outlet property="searchBar" destination="4Dy-VZ-ECM" id="gyd-k4-Rsw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0H-nP-cU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Ztp-f7-OCK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="612" y="2817"/>
+            <point key="canvasLocation" x="612" y="2038"/>
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.2.squarepath" catalog="system" width="128" height="89"/>
-        <image name="bed.double.fill" catalog="system" width="128" height="82"/>
-        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="arrow.2.squarepath" catalog="system" width="128" height="88"/>
+        <image name="person.3.fill" catalog="system" width="128" height="66"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

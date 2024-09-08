@@ -1,12 +1,18 @@
 import Foundation
 import UIKit
 
+protocol TeacherChangeViewControllerDelegate: AnyObject {
+    func buttonPressedOnSecondScreen()
+}
+
 class TeacherChangeController: UITableViewController {
     var teacherListManager = TeacherListManager()
     var teachers = [Teacher]()
     var filteredTeachers = [Teacher]()
     var defaults = UserDefaults()
     @IBOutlet weak var searchBar: UISearchBar!
+    
+    weak var delegate: TeacherChangeViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +47,12 @@ extension TeacherChangeController {
         defaults.set(filteredTeachers[indexPath.row].name, forKey: "selectedTeacherName")
         tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        // Notify delegate (ViewController1) that the button was pressed
+        delegate?.buttonPressedOnSecondScreen()
+        
+        // Dismiss the second screen
+        self.dismiss(animated: true)
     }
 }
 

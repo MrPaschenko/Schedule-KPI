@@ -30,9 +30,14 @@ class TeacherScheduleController: UITableViewController {
         }
     }
     
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
-        navigationItem.title = defaults.string(forKey: "selectedTeacherName") ?? "Аушева Наталія Миколаївна"
-        teacherScheduleManager.getTeacherSchedule(teacherId: defaults.string(forKey: "selectedTeacherId") ?? "231bc414-8801-44f0-bb44-ad66923c3c0b")
+    @IBAction func changeTeacherButtonPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "teacherScheduleToTeacherChange", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let teacherChangeController = segue.destination as! TeacherChangeController
+        
+        teacherChangeController.delegate = self
     }
 }
 
@@ -121,12 +126,24 @@ extension TeacherScheduleController: TeacherScheduleManagerDelegate{
     }
     
     func sortPairs(in week: [TeacherScheduleDay]) -> [TeacherScheduleDay] {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        
         var newWeek = week
         for i in 0...5 {
-            //TODO: don't use !
-            newWeek[i].pairs.sort { Double($0.time)! < Double($1.time)! }
+            newWeek[i].pairs.sort {
+                let time1 = dateFormatter.date(from: $0.time) ?? Date()
+                let time2 = dateFormatter.date(from: $1.time) ?? Date()
+                return time1 < time2
+            }
         }
         return newWeek
     }
 }
 
+extension TeacherScheduleController: TeacherChangeViewControllerDelegate {
+    func buttonPressedOnSecondScreen() {
+        navigationItem.title = defaults.string(forKey: "selectedTeacherName") ?? "Аушева Наталія Миколаївна"
+        teacherScheduleManager.getTeacherSchedule(teacherId: defaults.string(forKey: "selectedTeacherId") ?? "231bc414-8801-44f0-bb44-ad66923c3c0b")
+    }
+}

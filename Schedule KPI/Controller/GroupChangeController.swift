@@ -1,6 +1,10 @@
 import Foundation
 import UIKit
 
+protocol GroupChangeViewControllerDelegate: AnyObject {
+    func buttonPressedOnSecondScreen()
+}
+
 class GroupChangeController: UITableViewController {
     var groupListManager = GroupListManager()
     var groups = [Group]()
@@ -8,14 +12,13 @@ class GroupChangeController: UITableViewController {
     var defaults = UserDefaults()
     @IBOutlet weak var searchBar: UISearchBar!
     
+    weak var delegate: GroupChangeViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         groupListManager.delegate = self
         groupListManager.getGroupList()
         searchBar.delegate = self
-    }
-    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
     }
 }
 
@@ -45,6 +48,12 @@ extension GroupChangeController {
         defaults.set(filteredGroups[indexPath.row].faculty, forKey: "selectedGroupFaculty")
         tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        // Notify delegate (ViewController1) that the button was pressed
+        delegate?.buttonPressedOnSecondScreen()
+        
+        // Dismiss the second screen
+        self.dismiss(animated: true)
     }
 }
 

@@ -30,9 +30,14 @@ class LessonsScheduleController: UITableViewController {
         }
     }
     
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
-        navigationItem.title = defaults.string(forKey: "selectedGroupName") ?? "ІП-01"
-        scheduleManager.getSchedule(groupId: defaults.string(forKey: "selectedGroupId") ?? "37dc2fc9-d044-4860-8170-5ce68a55a9b5")
+    @IBAction func changeGroupButtonPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "lessonsScheduleToGroupChange", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let groupChangeController = segue.destination as! GroupChangeController
+        
+        groupChangeController.delegate = self
     }
 }
 
@@ -134,11 +139,24 @@ extension LessonsScheduleController: ScheduleManagerDelegate {
     }
     
     func sortPairs(in week: [ScheduleDay]) -> [ScheduleDay] {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        
         var newWeek = week
         for i in 0...5 {
-            //TODO: don't use !
-            newWeek[i].pairs.sort { Double($0.time)! < Double($1.time)! }
+            newWeek[i].pairs.sort {
+                let time1 = dateFormatter.date(from: $0.time) ?? Date()
+                let time2 = dateFormatter.date(from: $1.time) ?? Date()
+                return time1 < time2
+            }
         }
         return newWeek
+    }
+}
+
+extension LessonsScheduleController: GroupChangeViewControllerDelegate {
+    func buttonPressedOnSecondScreen() {
+        navigationItem.title = defaults.string(forKey: "selectedGroupName") ?? "ІП-01"
+        scheduleManager.getSchedule(groupId: defaults.string(forKey: "selectedGroupId") ?? "37dc2fc9-d044-4860-8170-5ce68a55a9b5")
     }
 }
