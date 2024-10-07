@@ -5,7 +5,7 @@ struct TeacherSchedule: Decodable {
 }
 
 struct TeacherScheduleData: Decodable {
-    var lecturerName: String
+    var lecturerId: String
     var scheduleFirstWeek: [TeacherScheduleDay]
     var scheduleSecondWeek: [TeacherScheduleDay]
 }

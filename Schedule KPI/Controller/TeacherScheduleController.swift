@@ -8,12 +8,37 @@ class TeacherScheduleController: UITableViewController {
     var scheduleWeek = [TeacherScheduleDay]()
     var defaults = UserDefaults()
     var daysWithPairs = [TeacherScheduleDay]()
+    @IBOutlet weak var selectOrChangeTeacherButton: UIBarButtonItem!
+    @IBOutlet weak var changeWeekButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         teacherScheduleManager.delegate = self
-        navigationItem.title = defaults.string(forKey: "selectedTeacherName") ?? "Аушева Наталія Миколаївна"
-        teacherScheduleManager.getTeacherSchedule(teacherId: defaults.string(forKey: "selectedTeacherId") ?? "231bc414-8801-44f0-bb44-ad66923c3c0b")
+        changeSelfTabBarItemTitle(to: String(localized: "teacher"))
+        handleButtonsRepresentation()
+    }
+    
+    func handleButtonsRepresentation() {
+        if let selectedTeacherName = defaults.string(forKey: "selectedTeacherName") {
+            navigationItem.title = selectedTeacherName
+            changeSelfTabBarItemTitle(to: selectedTeacherName)
+            selectOrChangeTeacherButton.image = UIImage(systemName: "arrow.2.squarepath")
+            changeWeekButton.isHidden = false
+        } else {
+            navigationItem.title = String(localized: "teacherIsNotSelected")
+            selectOrChangeTeacherButton.image = UIImage(systemName: "magnifyingglass")
+            changeWeekButton.isHidden = true
+        }
+        
+        if let selectedTeacherId = defaults.string(forKey: "selectedTeacherId") {
+            teacherScheduleManager.getTeacherSchedule(teacherId: selectedTeacherId)
+        }
+    }
+    
+    func changeSelfTabBarItemTitle(to title: String) {
+        if let navigationController = self.navigationController {
+            navigationController.tabBarItem.title = title
+        }
     }
     
     @IBAction func weekChanged(_ sender: UISegmentedControl) {
@@ -63,28 +88,57 @@ extension TeacherScheduleController {
         
         var configuration = cell.defaultContentConfiguration()
         let pair = daysWithPairs[indexPath.section].pairs[indexPath.row]
-        let pairName = pair.type != "" ? "\(pair.name) (\(pair.type))" : pair.name
-        configuration.text = pairName
-        configuration.secondaryText = pair.time
-        configuration.secondaryTextProperties.color = .systemBlue
+        
+        let configurationText = pair.type != "" ? "\(pair.name) (\(pair.type))" : pair.name
+        configuration.text = configurationText
+        
+        let secondaryText = NSMutableAttributedString()
+        
+        let blueAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.systemBlue]
+        
+        var timeText = ""
+        
+        switch pair.time {
+        case "8:30":
+            timeText = "08:30 — 10:05"
+        case "10:25":
+            timeText = "10:25 — 12:00"
+        case "12:20":
+            timeText = "12:20 — 13:55"
+        case "14:15":
+            timeText = "14:15 — 15:50"
+        case "16:10":
+            timeText = "16:10 — 17:45"
+        case "18:30":
+            timeText = "18:30 — 20:05"
+        default:
+            timeText = pair.time
+        }
+        
+        let attributedBlueTimeText = NSAttributedString(string: timeText, attributes: blueAttributes)
+        secondaryText.append(attributedBlueTimeText)
+        
+        if pair.place != "" {
+            let placeText = " • \(pair.place.last == "-" ? String(pair.place.dropLast()) : pair.place)"
+            let attributedPlace = NSAttributedString(string: placeText)
+            secondaryText.append(attributedPlace)
+        }
+        
+        let groupsList = pair.group
+            .replacingOccurrences(of: "(", with: " (")
+            .replacingOccurrences(of: ",", with: ", ")
+        
+        let groupsText = " • \(groupsList)"
+        let attributedGroup = NSAttributedString(string: groupsText)
+        secondaryText.append(attributedGroup)
+        
+        configuration.secondaryAttributedText = secondaryText
         cell.contentConfiguration = configuration
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let pair = daysWithPairs[indexPath.section].pairs[indexPath.row]
-        
-        let alertTitle = pair.type != "" ? "\(pair.name) (\(pair.type))" : pair.name
-        lazy var alertMessage = pair.place != "" ? "\(pair.group)\n\(pair.place)" : pair.group
-        
-        let alert = UIAlertController(title: alertTitle,
-                                      message: alertMessage,
-                                      preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .cancel))
-        present(alert, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
-
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -94,17 +148,17 @@ extension TeacherScheduleController {
         
         switch daysWithPairs[section].day {
         case .monday:
-            return NSLocalizedString("Monday", comment: "")
+            return String(localized: "monday")
         case .tuesday:
-            return NSLocalizedString("Tuesday", comment: "")
+            return String(localized: "tuesday")
         case .wednesday:
-            return NSLocalizedString("Wednesday", comment: "")
+            return String(localized: "wednesday")
         case .thursday:
-            return NSLocalizedString("Thursday", comment: "")
+            return String(localized: "thursday")
         case .friday:
-            return NSLocalizedString("Friday", comment: "")
+            return String(localized: "friday")
         case .saturday:
-            return NSLocalizedString("Saturday", comment: "")
+            return String(localized: "saturday")
         }
     }
 }
@@ -143,7 +197,6 @@ extension TeacherScheduleController: TeacherScheduleManagerDelegate{
 
 extension TeacherScheduleController: TeacherChangeViewControllerDelegate {
     func buttonPressedOnSecondScreen() {
-        navigationItem.title = defaults.string(forKey: "selectedTeacherName") ?? "Аушева Наталія Миколаївна"
-        teacherScheduleManager.getTeacherSchedule(teacherId: defaults.string(forKey: "selectedTeacherId") ?? "231bc414-8801-44f0-bb44-ad66923c3c0b")
+        handleButtonsRepresentation()
     }
 }

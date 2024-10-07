@@ -22,7 +22,7 @@
 		A2D33F0828269C4D00374AC1 /* GroupChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0728269C4D00374AC1 /* GroupChangeController.swift */; };
 		A2D33F0A28269EF600374AC1 /* GroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0928269EF600374AC1 /* GroupList.swift */; };
 		A2D33F0C2826A00B00374AC1 /* GroupListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0B2826A00B00374AC1 /* GroupListManager.swift */; };
-		A2EC54CF2835859A00F227D6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2EC54D12835859A00F227D6 /* Localizable.strings */; };
+		A2E285092CAD73D900610A9E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A2E285082CAD73D900610A9E /* Localizable.xcstrings */; };
 		A2F7D772281882D900201950 /* LessonsScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F7D771281882D900201950 /* LessonsScheduleController.swift */; };
 		A2F7D774281884EC00201950 /* ScheduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F7D773281884EC00201950 /* ScheduleManager.swift */; };
 /* End PBXBuildFile section */
@@ -45,13 +45,7 @@
 		A2D33F0728269C4D00374AC1 /* GroupChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChangeController.swift; sourceTree = "<group>"; };
 		A2D33F0928269EF600374AC1 /* GroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupList.swift; sourceTree = "<group>"; };
 		A2D33F0B2826A00B00374AC1 /* GroupListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListManager.swift; sourceTree = "<group>"; };
-		A2EC54C92835839F00F227D6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		A2EC54CA2835839F00F227D6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		A2EC54CB2835843700F227D6 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
-		A2EC54CC2835843700F227D6 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		A2EC54D02835859A00F227D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A2EC54D22835859B00F227D6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A2EC54D32835859C00F227D6 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A2E285082CAD73D900610A9E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A2F7D771281882D900201950 /* LessonsScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsScheduleController.swift; sourceTree = "<group>"; };
 		A2F7D773281884EC00201950 /* ScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,9 +85,9 @@
 				A27F64942818808200D6791D /* Model */,
 				A27F6495281881F000D6791D /* View */,
 				A27F64962818820200D6791D /* Controller */,
-				A2EC54D12835859A00F227D6 /* Localizable.strings */,
 				A27F6487281763DF00D6791D /* Assets.xcassets */,
 				A27F648C281763E000D6791D /* Info.plist */,
+				A2E285082CAD73D900610A9E /* Localizable.xcstrings */,
 			);
 			path = "Schedule KPI";
 			sourceTree = "<group>";
@@ -161,7 +155,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					A27F647A281763DD00D6791D = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -194,7 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A27F648B281763E000D6791D /* LaunchScreen.storyboard in Resources */,
-				A2EC54CF2835859A00F227D6 /* Localizable.strings in Resources */,
+				A2E285092CAD73D900610A9E /* Localizable.xcstrings in Resources */,
 				A27F6488281763DF00D6791D /* Assets.xcassets in Resources */,
 				A27F6486281763DD00D6791D /* Main.storyboard in Resources */,
 			);
@@ -231,8 +225,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A27F6485281763DD00D6791D /* Base */,
-				A2EC54C92835839F00F227D6 /* ru */,
-				A2EC54CB2835843700F227D6 /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -241,20 +233,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				A27F648A281763E000D6791D /* Base */,
-				A2EC54CA2835839F00F227D6 /* ru */,
-				A2EC54CC2835843700F227D6 /* uk */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		A2EC54D12835859A00F227D6 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2EC54D02835859A00F227D6 /* en */,
-				A2EC54D22835859B00F227D6 /* ru */,
-				A2EC54D32835859C00F227D6 /* uk */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -318,6 +298,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -373,6 +354,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -395,12 +377,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "mrpaschenko.Schedule-KPI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -426,12 +408,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "mrpaschenko.Schedule-KPI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
