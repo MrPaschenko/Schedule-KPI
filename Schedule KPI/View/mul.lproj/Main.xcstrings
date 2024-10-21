@@ -3,7 +3,6 @@
   "strings" : {
     "2tG-Lb-Cje.text" : {
       "comment" : "Class = \"UILabel\"; text = \"Time\"; ObjectID = \"2tG-Lb-Cje\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -33,7 +32,6 @@
     },
     "4Dy-VZ-ECM.placeholder" : {
       "comment" : "Class = \"UISearchBar\"; placeholder = \"Search\"; ObjectID = \"4Dy-VZ-ECM\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -63,7 +61,6 @@
     },
     "acT-Zf-9Z7.title" : {
       "comment" : "Class = \"UINavigationItem\"; title = \"Group change\"; ObjectID = \"acT-Zf-9Z7\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -93,7 +90,6 @@
     },
     "GBF-X1-KPN.text" : {
       "comment" : "Class = \"UILabel\"; text = \"Subtitle\"; ObjectID = \"GBF-X1-KPN\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -123,7 +119,6 @@
     },
     "i6j-MN-kah.title" : {
       "comment" : "Class = \"UINavigationItem\"; title = \"Group name\"; ObjectID = \"i6j-MN-kah\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -153,7 +148,6 @@
     },
     "Iol-LY-U2o.segmentTitles[0]" : {
       "comment" : "Class = \"UISegmentedControl\"; Iol-LY-U2o.segmentTitles[0] = \"1\"; ObjectID = \"Iol-LY-U2o\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -183,7 +177,6 @@
     },
     "Iol-LY-U2o.segmentTitles[1]" : {
       "comment" : "Class = \"UISegmentedControl\"; Iol-LY-U2o.segmentTitles[1] = \"2\"; ObjectID = \"Iol-LY-U2o\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -213,7 +206,6 @@
     },
     "jPF-JL-wZ7.text" : {
       "comment" : "Class = \"UILabel\"; text = \"Pair name\"; ObjectID = \"jPF-JL-wZ7\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -243,7 +235,6 @@
     },
     "jyk-Nh-G9d.placeholder" : {
       "comment" : "Class = \"UISearchBar\"; placeholder = \"Search\"; ObjectID = \"jyk-Nh-G9d\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -273,7 +264,6 @@
     },
     "lc0-zh-gYl.title" : {
       "comment" : "Class = \"UINavigationItem\"; title = \"Teacher name\"; ObjectID = \"lc0-zh-gYl\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -303,7 +293,6 @@
     },
     "LIg-hP-oiC.title" : {
       "comment" : "Class = \"UITabBarItem\"; title = \"Teacher\"; ObjectID = \"LIg-hP-oiC\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -333,7 +322,6 @@
     },
     "QhQ-ev-vw5.title" : {
       "comment" : "Class = \"UINavigationItem\"; title = \"Teacher change\"; ObjectID = \"QhQ-ev-vw5\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -363,7 +351,6 @@
     },
     "s98-Xb-xmT.segmentTitles[0]" : {
       "comment" : "Class = \"UISegmentedControl\"; s98-Xb-xmT.segmentTitles[0] = \"1\"; ObjectID = \"s98-Xb-xmT\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -393,7 +380,6 @@
     },
     "s98-Xb-xmT.segmentTitles[1]" : {
       "comment" : "Class = \"UISegmentedControl\"; s98-Xb-xmT.segmentTitles[1] = \"2\"; ObjectID = \"s98-Xb-xmT\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -423,7 +409,6 @@
     },
     "SS0-9F-Kh0.title" : {
       "comment" : "Class = \"UITabBarItem\"; title = \"Group\"; ObjectID = \"SS0-9F-Kh0\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -453,7 +438,6 @@
     },
     "TBH-hY-BAH.text" : {
       "comment" : "Class = \"UILabel\"; text = \"Title\"; ObjectID = \"TBH-hY-BAH\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -483,7 +467,6 @@
     },
     "WHy-gz-2MW.text" : {
       "comment" : "Class = \"UILabel\"; text = \"Pair name\"; ObjectID = \"WHy-gz-2MW\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -513,7 +496,6 @@
     },
     "xGR-0T-AJW.text" : {
       "comment" : "Class = \"UILabel\"; text = \"Time\"; ObjectID = \"xGR-0T-AJW\";",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
