@@ -19,6 +19,7 @@ class GroupChangeController: UITableViewController {
         groupListManager.delegate = self
         groupListManager.getGroupList()
         searchBar.delegate = self
+        searchBar.placeholder = String(localized: "search")
     }
 }
 

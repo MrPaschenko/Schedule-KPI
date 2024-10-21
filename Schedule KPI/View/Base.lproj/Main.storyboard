@@ -102,6 +102,12 @@
                             </segmentedControl>
                         </barButtonItem>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="paS-XT-20l">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh:" destination="GI2-gp-xpN" eventType="valueChanged" id="FxV-A8-R6f"/>
+                        </connections>
+                    </refreshControl>
                     <connections>
                         <outlet property="changeWeekButton" destination="TbT-JX-o1J" id="Vzz-z2-sBs"/>
                         <outlet property="selectOrChangeGroupButton" destination="TkT-30-AhO" id="LXX-Nh-Cjv"/>
@@ -170,6 +176,12 @@
                             </segmentedControl>
                         </barButtonItem>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="kwb-Dg-UR6">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh:" destination="VjF-iz-Vtt" eventType="valueChanged" id="WJK-wC-pYn"/>
+                        </connections>
+                    </refreshControl>
                     <connections>
                         <outlet property="changeWeekButton" destination="d0d-Sn-Amz" id="35o-Ly-nTv"/>
                         <outlet property="selectOrChangeTeacherButton" destination="ts7-eG-eFp" id="SQ5-8k-14X"/>

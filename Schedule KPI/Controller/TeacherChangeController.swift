@@ -19,6 +19,7 @@ class TeacherChangeController: UITableViewController {
         teacherListManager.delegate = self
         teacherListManager.getTeacherList()
         searchBar.delegate = self
+        searchBar.placeholder = String(localized: "search")
     }
 }
 

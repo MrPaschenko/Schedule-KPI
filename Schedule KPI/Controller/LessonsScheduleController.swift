@@ -78,6 +78,16 @@ class LessonsScheduleController: UITableViewController {
         
         groupChangeController.delegate = self
     }
+    
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        if let selectedGroupId = defaults.string(forKey: "selectedGroupId") {
+            scheduleManager.getSchedule(groupId: selectedGroupId)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            sender.endRefreshing()
+        }
+    }
 }
 
 //MARK: - TableView
@@ -138,9 +148,11 @@ extension LessonsScheduleController {
             secondaryText.append(attributedPlace)
         }
         
-        let teacherText = " • \(pair.teacherName)"
-        let attributedTeacher = NSAttributedString(string: teacherText)
-        secondaryText.append(attributedTeacher)
+        if pair.teacherName != "" {
+            let teacherText = " • \(pair.teacherName)"
+            let attributedTeacher = NSAttributedString(string: teacherText)
+            secondaryText.append(attributedTeacher)
+        }
         
         configuration.secondaryAttributedText = secondaryText
         

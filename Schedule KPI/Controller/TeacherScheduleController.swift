@@ -64,6 +64,16 @@ class TeacherScheduleController: UITableViewController {
         
         teacherChangeController.delegate = self
     }
+    
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        if let selectedTeacherId = defaults.string(forKey: "selectedTeacherId") {
+            teacherScheduleManager.getTeacherSchedule(teacherId: selectedTeacherId)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            sender.endRefreshing()
+        }
+    }
 }
 
 //MARK: - TableView
@@ -124,13 +134,15 @@ extension TeacherScheduleController {
             secondaryText.append(attributedPlace)
         }
         
-        let groupsList = pair.group
-            .replacingOccurrences(of: "(", with: " (")
-            .replacingOccurrences(of: ",", with: ", ")
-        
-        let groupsText = " • \(groupsList)"
-        let attributedGroup = NSAttributedString(string: groupsText)
-        secondaryText.append(attributedGroup)
+        if pair.group != "" {
+            let groupsList = pair.group
+                .replacingOccurrences(of: "(", with: " (")
+                .replacingOccurrences(of: ",", with: ", ")
+            
+            let groupsText = " • \(groupsList)"
+            let attributedGroup = NSAttributedString(string: groupsText)
+            secondaryText.append(attributedGroup)
+        }
         
         configuration.secondaryAttributedText = secondaryText
         cell.contentConfiguration = configuration
