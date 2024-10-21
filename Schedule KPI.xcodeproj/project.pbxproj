@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A203BD0E2CC6885C0088BA0C /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/Main.xcstrings; sourceTree = "<group>"; };
 		A24C9E8628368E0400698FDA /* TeacherScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherScheduleController.swift; sourceTree = "<group>"; };
 		A24C9E8828368E4700698FDA /* TeacherSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSchedule.swift; sourceTree = "<group>"; };
 		A24C9E8A28368F9700698FDA /* TeacherScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherScheduleManager.swift; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A27F6485281763DD00D6791D /* Base */,
+				A203BD0E2CC6885C0088BA0C /* mul */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

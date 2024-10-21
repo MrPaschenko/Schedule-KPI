@@ -1,239 +1,39 @@
 {
   "sourceLanguage" : "uk",
   "strings" : {
-    "friday" : {
-      "extractionState" : "manual",
+    "2tG-Lb-Cje.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Time\"; ObjectID = \"2tG-Lb-Cje\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cum’a"
+            "value" : "Vaqıt"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Friday"
+            "value" : "Time"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Пятница"
+            "value" : "Время"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Пʼятниця"
+            "value" : "Час"
           }
         }
       }
     },
-    "group" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grupa"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Group"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Группа"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Група"
-          }
-        }
-      }
-    },
-    "groupChange" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grupa değişimi"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Changing group"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Изменение группы"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Зміна групи"
-          }
-        }
-      }
-    },
-    "groupIsNotSelected" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grupa seçilmedi"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Group is not selected"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Группа не выбрана"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Група не вибрана"
-          }
-        }
-      }
-    },
-    "groupName" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grupa adı"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Group name"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Название группы"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Назва групи"
-          }
-        }
-      }
-    },
-    "monday" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pazartesi"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Monday"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Понедельник"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Понеділок"
-          }
-        }
-      }
-    },
-    "ok" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tamam"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OK"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ОК"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ОК"
-          }
-        }
-      }
-    },
-    "saturday" : {
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cumartesi"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saturday"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Суббота"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Субота"
-          }
-        }
-      }
-    },
-    "search" : {
-      "extractionState" : "manual",
+    "4Dy-VZ-ECM.placeholder" : {
+      "comment" : "Class = \"UISearchBar\"; placeholder = \"Search\"; ObjectID = \"4Dy-VZ-ECM\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -261,124 +61,219 @@
         }
       }
     },
-    "session" : {
-      "extractionState" : "manual",
+    "acT-Zf-9Z7.title" : {
+      "comment" : "Class = \"UINavigationItem\"; title = \"Group change\"; ObjectID = \"acT-Zf-9Z7\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seans"
+            "value" : "Grupa değişimi"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Session"
+            "value" : "Group change"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сессия"
+            "value" : "Изменение группы"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сесія"
+            "value" : "Зміна групи"
           }
         }
       }
     },
-    "teacher" : {
-      "extractionState" : "manual",
+    "GBF-X1-KPN.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Subtitle\"; ObjectID = \"GBF-X1-KPN\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Muallim"
+            "value" : "Altbaşlıq"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Teacher"
+            "value" : "Subtitle"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Преподаватель"
+            "value" : "Подзаголовок"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Викладач"
+            "value" : "Підзаголовок"
           }
         }
       }
     },
-    "teacherChange" : {
-      "extractionState" : "manual",
+    "i6j-MN-kah.title" : {
+      "comment" : "Class = \"UINavigationItem\"; title = \"Group name\"; ObjectID = \"i6j-MN-kah\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Muallim değişimi"
+            "value" : "Grupa adı"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Changing teacher"
+            "value" : "Group name"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Изменение преподавателя"
+            "value" : "Название группы"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Зміна викладача"
+            "value" : "Назва групи"
           }
         }
       }
     },
-    "teacherIsNotSelected" : {
-      "extractionState" : "manual",
+    "Iol-LY-U2o.segmentTitles[0]" : {
+      "comment" : "Class = \"UISegmentedControl\"; Iol-LY-U2o.segmentTitles[0] = \"1\"; ObjectID = \"Iol-LY-U2o\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Muallim seçilmedi"
+            "value" : "1"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Teacher is not selected"
+            "value" : "1"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Преподаватель не выбран"
+            "value" : "1"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Викладач не вибраний"
+            "value" : "1"
           }
         }
       }
     },
-    "teacherName" : {
-      "extractionState" : "manual",
+    "Iol-LY-U2o.segmentTitles[1]" : {
+      "comment" : "Class = \"UISegmentedControl\"; Iol-LY-U2o.segmentTitles[1] = \"2\"; ObjectID = \"Iol-LY-U2o\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "crh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2"
+          }
+        }
+      }
+    },
+    "jPF-JL-wZ7.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Pair name\"; ObjectID = \"jPF-JL-wZ7\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "crh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para adı"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pair name"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название пары"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Назва пари"
+          }
+        }
+      }
+    },
+    "jyk-Nh-G9d.placeholder" : {
+      "comment" : "Class = \"UISearchBar\"; placeholder = \"Search\"; ObjectID = \"jyk-Nh-G9d\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "crh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qıdır"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пошук"
+          }
+        }
+      }
+    },
+    "lc0-zh-gYl.title" : {
+      "comment" : "Class = \"UINavigationItem\"; title = \"Teacher name\"; ObjectID = \"lc0-zh-gYl\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
@@ -406,89 +301,242 @@
         }
       }
     },
-    "thursday" : {
-      "extractionState" : "manual",
+    "LIg-hP-oiC.title" : {
+      "comment" : "Class = \"UITabBarItem\"; title = \"Teacher\"; ObjectID = \"LIg-hP-oiC\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Perşembe"
+            "value" : "Muallim"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Thursday"
+            "value" : "Teacher"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Четверг"
+            "value" : "Преподаватель"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Четвер"
+            "value" : "Викладач"
           }
         }
       }
     },
-    "tuesday" : {
-      "extractionState" : "manual",
+    "QhQ-ev-vw5.title" : {
+      "comment" : "Class = \"UINavigationItem\"; title = \"Teacher change\"; ObjectID = \"QhQ-ev-vw5\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Salı"
+            "value" : "Muallim değişimi"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tuesday"
+            "value" : "Teacher change"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вторник"
+            "value" : "Изменение преподавателя"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вівторок"
+            "value" : "Зміна викладача"
           }
         }
       }
     },
-    "wednesday" : {
-      "extractionState" : "manual",
+    "s98-Xb-xmT.segmentTitles[0]" : {
+      "comment" : "Class = \"UISegmentedControl\"; s98-Xb-xmT.segmentTitles[0] = \"1\"; ObjectID = \"s98-Xb-xmT\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "crh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Çarşamba"
+            "value" : "1"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wednesday"
+            "value" : "1"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Среда"
+            "value" : "1"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Середа"
+            "value" : "1"
+          }
+        }
+      }
+    },
+    "s98-Xb-xmT.segmentTitles[1]" : {
+      "comment" : "Class = \"UISegmentedControl\"; s98-Xb-xmT.segmentTitles[1] = \"2\"; ObjectID = \"s98-Xb-xmT\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "crh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2"
+          }
+        }
+      }
+    },
+    "SS0-9F-Kh0.title" : {
+      "comment" : "Class = \"UITabBarItem\"; title = \"Group\"; ObjectID = \"SS0-9F-Kh0\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "crh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grupa"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Group"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Группа"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Група"
+          }
+        }
+      }
+    },
+    "TBH-hY-BAH.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Title\"; ObjectID = \"TBH-hY-BAH\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "crh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlıq"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заголовок"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заголовок"
+          }
+        }
+      }
+    },
+    "WHy-gz-2MW.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Pair name\"; ObjectID = \"WHy-gz-2MW\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "crh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para adı"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pair name"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название пары"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Назва пари"
+          }
+        }
+      }
+    },
+    "xGR-0T-AJW.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Time\"; ObjectID = \"xGR-0T-AJW\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "crh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaqıt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Час"
           }
         }
       }
