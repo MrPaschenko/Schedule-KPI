@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 protocol TeacherChangeViewControllerDelegate: AnyObject {
@@ -16,60 +15,20 @@ class TeacherChangeController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        teacherListManager.delegate = self
-        teacherListManager.getTeacherList()
+        
+        Task {
+            do {
+                teachers = sortTeachers(teachers: try await teacherListManager.teachers.data)
+                filteredTeachers = teachers
+                
+                tableView.reloadData()
+            } catch {
+                print("Error getting teachers: \(error)")
+            }
+        }
+        
         searchBar.delegate = self
         searchBar.placeholder = String(localized: "search")
-    }
-}
-
-//MARK: - TableView
-extension TeacherChangeController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredTeachers.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TeacherCell", for: indexPath)
-        
-        var configuration = cell.defaultContentConfiguration()
-        let teacher = filteredTeachers[indexPath.row]
-        let teacherName = teacher.name
-        configuration.text = teacherName
-        if let selectedTeacherId = defaults.string(forKey: "selectedTeacherId") {
-            cell.accessoryType = teacher.id == selectedTeacherId ? .checkmark : .none
-        }
-        cell.contentConfiguration = configuration
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        defaults.set(filteredTeachers[indexPath.row].id, forKey: "selectedTeacherId")
-        defaults.set(filteredTeachers[indexPath.row].name, forKey: "selectedTeacherName")
-        tableView.reloadData()
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-        // Notify delegate (ViewController1) that the button was pressed
-        delegate?.buttonPressedOnSecondScreen()
-        
-        // Dismiss the second screen
-        self.dismiss(animated: true)
-    }
-}
-
-//MARK: - Networking
-extension TeacherChangeController: TeacherListManagerDelegate {
-    func didUpdateTeacherList(_ teacherListManager: TeacherListManager, teacherList: TeacherList) {
-        teachers = sortTeachers(teachers: teacherList.data)
-        filteredTeachers = teachers
-        
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
-    
-    func didFailWithError(error: Error) {
-        print(error)
     }
     
     func sortTeachers(teachers: [Teacher]) -> [Teacher] {
@@ -117,6 +76,40 @@ extension TeacherChangeController: TeacherListManagerDelegate {
         }
         
         return newTeachers
+    }
+}
+
+//MARK: - TableView
+extension TeacherChangeController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return filteredTeachers.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TeacherCell", for: indexPath)
+        
+        var configuration = cell.defaultContentConfiguration()
+        let teacher = filteredTeachers[indexPath.row]
+        let teacherName = teacher.name
+        configuration.text = teacherName
+        if let selectedTeacherId = defaults.string(forKey: "selectedTeacherId") {
+            cell.accessoryType = teacher.id == selectedTeacherId ? .checkmark : .none
+        }
+        cell.contentConfiguration = configuration
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        defaults.set(filteredTeachers[indexPath.row].id, forKey: "selectedTeacherId")
+        defaults.set(filteredTeachers[indexPath.row].name, forKey: "selectedTeacherName")
+        tableView.reloadData()
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // Notify delegate (ViewController1) that the button was pressed
+        delegate?.buttonPressedOnSecondScreen()
+        
+        // Dismiss the second screen
+        self.dismiss(animated: true)
     }
 }
 

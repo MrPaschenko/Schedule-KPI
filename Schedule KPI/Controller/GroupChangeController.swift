@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 protocol GroupChangeViewControllerDelegate: AnyObject {
@@ -16,10 +15,44 @@ class GroupChangeController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        groupListManager.delegate = self
-        groupListManager.getGroupList()
+        
+        Task {
+            do {
+                groups = sortGroups(groups: try await groupListManager.groups.data)
+                filteredGroups = groups
+                
+                tableView.reloadData()
+            } catch {
+                print("Error getting groups: \(error)")
+            }
+        }
+        
         searchBar.delegate = self
         searchBar.placeholder = String(localized: "search")
+    }
+    
+    func sortGroups(groups: [Group]) -> [Group] {
+        var newGroups = groups
+        newGroups.sort { $0.name < $1.name }
+        
+        var groupsStaringWithI = [Group]()
+        var lastIndexOfGroupsStartingWithZ = Int()
+        
+        for group in newGroups {
+            if group.name.starts(with: "І") {
+                groupsStaringWithI.append(group)
+                newGroups.remove(at: newGroups.firstIndex(of: group)!)
+            }
+            if group.name.starts(with: "З") {
+                lastIndexOfGroupsStartingWithZ = newGroups.firstIndex(of: group)!
+            }
+        }
+        
+        for group in groupsStaringWithI {
+            newGroups.insert(group, at: lastIndexOfGroupsStartingWithZ + 1)
+        }
+        
+        return newGroups
     }
 }
 
@@ -55,46 +88,6 @@ extension GroupChangeController {
         
         // Dismiss the second screen
         self.dismiss(animated: true)
-    }
-}
-
-//MARK: - Networking
-extension GroupChangeController: GroupListManagerDelegate {
-    func didUpdateGroupList(_ groupListManager: GroupListManager, groupList: GroupList) {
-        groups = sortGroups(groups: groupList.data)
-        filteredGroups = groups
-        
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
-
-    func didFailWithError(error: Error) {
-        print(error)
-    }
-    
-    func sortGroups(groups: [Group]) -> [Group] {
-        var newGroups = groups
-        newGroups.sort { $0.name < $1.name }
-        
-        var groupsStaringWithI = [Group]()
-        var lastIndexOfGroupsStartingWithZ = Int()
-        
-        for group in newGroups {
-            if group.name.starts(with: "І") {
-                groupsStaringWithI.append(group)
-                newGroups.remove(at: newGroups.firstIndex(of: group)!)
-            }
-            if group.name.starts(with: "З") {
-                lastIndexOfGroupsStartingWithZ = newGroups.firstIndex(of: group)!
-            }
-        }
-        
-        for group in groupsStaringWithI {
-            newGroups.insert(group, at: lastIndexOfGroupsStartingWithZ + 1)
-        }
-        
-        return newGroups
     }
 }
 

@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 class LessonsScheduleController: UITableViewController {
@@ -13,7 +12,6 @@ class LessonsScheduleController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scheduleManager.delegate = self
                 
         changeSelfTabBarItemTitle(to: String(localized: "group"))
         changeTeacherTabBarItemTitle(to: String(localized: "teacher"))
@@ -33,13 +31,40 @@ class LessonsScheduleController: UITableViewController {
             changeWeekButton.isHidden = true
         }
         
-        if let selectedGroupId = defaults.string(forKey: "selectedGroupId") {
-            scheduleManager.getSchedule(groupId: selectedGroupId)
-        }
-        
         if let selectedTeacherName = defaults.string(forKey: "selectedTeacherName") {
             changeTeacherTabBarItemTitle(to: selectedTeacherName)
         }
+        
+        if let selectedGroupId = defaults.string(forKey: "selectedGroupId") {
+            Task {
+                do {
+                    let schedule = try await scheduleManager.schedule(groupId: selectedGroupId)
+                    
+                    firstWeekSchedule = sortPairs(in: schedule.data.scheduleFirstWeek)
+                    secondWeekSchedule = sortPairs(in: schedule.data.scheduleSecondWeek)
+                    scheduleWeek = firstWeekSchedule
+                    
+                    tableView.reloadData()
+                } catch {
+                    print("Error getting schedule: \(error)")
+                }
+            }
+        }
+    }
+    
+    func sortPairs(in week: [ScheduleDay]) -> [ScheduleDay] {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        
+        var newWeek = week
+        for i in 0...5 {
+            newWeek[i].pairs.sort {
+                let time1 = dateFormatter.date(from: $0.time) ?? Date()
+                let time2 = dateFormatter.date(from: $1.time) ?? Date()
+                return time1 < time2
+            }
+        }
+        return newWeek
     }
     
     func changeSelfTabBarItemTitle(to title: String) {
@@ -81,7 +106,19 @@ class LessonsScheduleController: UITableViewController {
     
     @IBAction func refresh(_ sender: UIRefreshControl) {
         if let selectedGroupId = defaults.string(forKey: "selectedGroupId") {
-            scheduleManager.getSchedule(groupId: selectedGroupId)
+            Task {
+                do {
+                    let schedule = try await scheduleManager.schedule(groupId: selectedGroupId)
+                    
+                    firstWeekSchedule = sortPairs(in: schedule.data.scheduleFirstWeek)
+                    secondWeekSchedule = sortPairs(in: schedule.data.scheduleSecondWeek)
+                    scheduleWeek = firstWeekSchedule
+                    
+                    tableView.reloadData()
+                } catch {
+                    print("Error getting schedule: \(error)")
+                }
+            }
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
@@ -183,38 +220,6 @@ extension LessonsScheduleController {
         case .saturday:
             return String(localized: "saturday")
         }
-    }
-}
-
-//MARK: - Networking
-extension LessonsScheduleController: ScheduleManagerDelegate {
-    func didUpdateSchedule(_ scheduleManager: ScheduleManager, schedule: Schedule) {
-        firstWeekSchedule = sortPairs(in: schedule.data.scheduleFirstWeek)
-        secondWeekSchedule = sortPairs(in: schedule.data.scheduleSecondWeek)
-        scheduleWeek = firstWeekSchedule
-
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
-    
-    func didFailWithError(error: Error) {
-        print(error)
-    }
-    
-    func sortPairs(in week: [ScheduleDay]) -> [ScheduleDay] {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm"
-        
-        var newWeek = week
-        for i in 0...5 {
-            newWeek[i].pairs.sort {
-                let time1 = dateFormatter.date(from: $0.time) ?? Date()
-                let time2 = dateFormatter.date(from: $1.time) ?? Date()
-                return time1 < time2
-            }
-        }
-        return newWeek
     }
 }
 

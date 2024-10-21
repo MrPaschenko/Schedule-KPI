@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 class TeacherScheduleController: UITableViewController {
@@ -13,7 +12,6 @@ class TeacherScheduleController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        teacherScheduleManager.delegate = self
         changeSelfTabBarItemTitle(to: String(localized: "teacher"))
         handleButtonsRepresentation()
     }
@@ -31,8 +29,35 @@ class TeacherScheduleController: UITableViewController {
         }
         
         if let selectedTeacherId = defaults.string(forKey: "selectedTeacherId") {
-            teacherScheduleManager.getTeacherSchedule(teacherId: selectedTeacherId)
+            Task {
+                do {
+                    let teacherSchedule = try await teacherScheduleManager.teacherSchedule(teacherId: selectedTeacherId)
+                    
+                    firstWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleFirstWeek)
+                    secondWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleSecondWeek)
+                    scheduleWeek = firstWeekSchedule
+                    
+                    tableView.reloadData()
+                } catch {
+                    print("Error getting teacher schedule: \(error)")
+                }
+            }
         }
+    }
+    
+    func sortPairs(in week: [TeacherScheduleDay]) -> [TeacherScheduleDay] {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        
+        var newWeek = week
+        for i in 0...5 {
+            newWeek[i].pairs.sort {
+                let time1 = dateFormatter.date(from: $0.time) ?? Date()
+                let time2 = dateFormatter.date(from: $1.time) ?? Date()
+                return time1 < time2
+            }
+        }
+        return newWeek
     }
     
     func changeSelfTabBarItemTitle(to title: String) {
@@ -67,7 +92,19 @@ class TeacherScheduleController: UITableViewController {
     
     @IBAction func refresh(_ sender: UIRefreshControl) {
         if let selectedTeacherId = defaults.string(forKey: "selectedTeacherId") {
-            teacherScheduleManager.getTeacherSchedule(teacherId: selectedTeacherId)
+            Task {
+                do {
+                    let teacherSchedule = try await teacherScheduleManager.teacherSchedule(teacherId: selectedTeacherId)
+                    
+                    firstWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleFirstWeek)
+                    secondWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleSecondWeek)
+                    scheduleWeek = firstWeekSchedule
+                    
+                    tableView.reloadData()
+                } catch {
+                    print("Error getting teacher schedule: \(error)")
+                }
+            }
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
@@ -172,38 +209,6 @@ extension TeacherScheduleController {
         case .saturday:
             return String(localized: "saturday")
         }
-    }
-}
-
-//MARK: - Networking
-extension TeacherScheduleController: TeacherScheduleManagerDelegate{
-    func didUpdateTeacherSchedule(_ teacherScheduleManager: TeacherScheduleManager, teacherSchedule: TeacherSchedule) {
-        firstWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleFirstWeek)
-        secondWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleSecondWeek)
-        scheduleWeek = firstWeekSchedule
-        
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
-
-    func didFailWithError(error: Error) {
-        print(error)
-    }
-    
-    func sortPairs(in week: [TeacherScheduleDay]) -> [TeacherScheduleDay] {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm"
-        
-        var newWeek = week
-        for i in 0...5 {
-            newWeek[i].pairs.sort {
-                let time1 = dateFormatter.date(from: $0.time) ?? Date()
-                let time2 = dateFormatter.date(from: $1.time) ?? Date()
-                return time1 < time2
-            }
-        }
-        return newWeek
     }
 }
 
