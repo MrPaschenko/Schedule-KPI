@@ -5,7 +5,7 @@ protocol GroupChangeViewControllerDelegate: AnyObject {
 }
 
 class GroupChangeController: UITableViewController {
-    var groupListManager = GroupListManager()
+    var groupListManager = GroupManager()
     var groups = [Group]()
     var filteredGroups = [Group]()
     var defaults = UserDefaults()
@@ -18,7 +18,7 @@ class GroupChangeController: UITableViewController {
         
         Task {
             do {
-                groups = sortGroups(groups: try await groupListManager.groups.data)
+                groups = sortGroups(groups: try await groupListManager.groups)
                 filteredGroups = groups
                 
                 tableView.reloadData()

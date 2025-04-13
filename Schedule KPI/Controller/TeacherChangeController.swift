@@ -5,7 +5,7 @@ protocol TeacherChangeViewControllerDelegate: AnyObject {
 }
 
 class TeacherChangeController: UITableViewController {
-    var teacherListManager = TeacherListManager()
+    var teacherListManager = TeacherManager()
     var teachers = [Teacher]()
     var filteredTeachers = [Teacher]()
     var defaults = UserDefaults()
@@ -18,7 +18,7 @@ class TeacherChangeController: UITableViewController {
         
         Task {
             do {
-                teachers = sortTeachers(teachers: try await teacherListManager.teachers.data)
+                teachers = sortTeachers(teachers: try await teacherListManager.teachers)
                 filteredTeachers = teachers
                 
                 tableView.reloadData()

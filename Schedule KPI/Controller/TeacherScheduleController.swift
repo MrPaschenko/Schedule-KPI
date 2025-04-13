@@ -33,8 +33,8 @@ class TeacherScheduleController: UITableViewController {
                 do {
                     let teacherSchedule = try await teacherScheduleManager.teacherSchedule(teacherId: selectedTeacherId)
                     
-                    firstWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleFirstWeek)
-                    secondWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleSecondWeek)
+                    firstWeekSchedule = sortPairs(in: teacherSchedule.scheduleFirstWeek)
+                    secondWeekSchedule = sortPairs(in: teacherSchedule.scheduleSecondWeek)
                     scheduleWeek = firstWeekSchedule
                     
                     tableView.reloadData()
@@ -96,8 +96,8 @@ class TeacherScheduleController: UITableViewController {
                 do {
                     let teacherSchedule = try await teacherScheduleManager.teacherSchedule(teacherId: selectedTeacherId)
                     
-                    firstWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleFirstWeek)
-                    secondWeekSchedule = sortPairs(in: teacherSchedule.data.scheduleSecondWeek)
+                    firstWeekSchedule = sortPairs(in: teacherSchedule.scheduleFirstWeek)
+                    secondWeekSchedule = sortPairs(in: teacherSchedule.scheduleSecondWeek)
                     scheduleWeek = firstWeekSchedule
                     
                     tableView.reloadData()

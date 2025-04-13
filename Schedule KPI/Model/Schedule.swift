@@ -1,10 +1,6 @@
 import Foundation
 
 struct Schedule: Decodable {
-    var data: ScheduleData
-}
-
-struct ScheduleData: Decodable {
     var groupCode: String
     var scheduleFirstWeek: [ScheduleDay]
     var scheduleSecondWeek: [ScheduleDay]
