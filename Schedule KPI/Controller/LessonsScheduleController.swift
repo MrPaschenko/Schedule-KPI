@@ -54,7 +54,7 @@ class LessonsScheduleController: UITableViewController {
     
     func sortPairs(in week: [ScheduleDay]) -> [ScheduleDay] {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm"
+        dateFormatter.dateFormat = "HH:mm:ss"
         
         var newWeek = week
         for i in 0...5 {
@@ -159,19 +159,22 @@ extension LessonsScheduleController {
         
         var timeText = ""
         
+        // https://kpi.ua/schedule
         switch pair.time {
-        case "8:30":
+        case "08:30:00":
             timeText = "08:30 — 10:05"
-        case "10:25":
+        case "10:25:00":
             timeText = "10:25 — 12:00"
-        case "12:20":
+        case "12:20:00":
             timeText = "12:20 — 13:55"
-        case "14:15":
+        case "14:15:00":
             timeText = "14:15 — 15:50"
-        case "16:10":
+        case "16:10:00":
             timeText = "16:10 — 17:45"
-        case "18:30":
-            timeText = "18:30 — 20:05"
+        case "18:05:00":
+            timeText = "18:05 — 19:40"
+        case "20:00:00":
+            timeText = "20:00 — 21:35"
         default:
             timeText = pair.time
         }
