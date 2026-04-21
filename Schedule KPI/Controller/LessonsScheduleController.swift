@@ -182,14 +182,14 @@ extension LessonsScheduleController {
         let attributedBlueTimeText = NSAttributedString(string: timeText, attributes: blueAttributes)
         secondaryText.append(attributedBlueTimeText)
         
-        if pair.place != "" {
-            let placeText = " • \(pair.place.last == "-" ? String(pair.place.dropLast()) : pair.place)"
+        if let location = pair.location?.title, !location.isEmpty {
+            let placeText = " • \(location.last == "-" ? String(location.dropLast()) : location)"
             let attributedPlace = NSAttributedString(string: placeText)
             secondaryText.append(attributedPlace)
         }
-        
-        if pair.teacherName != "" {
-            let teacherText = " • \(pair.teacherName)"
+
+        if !pair.lecturer.name.isEmpty {
+            let teacherText = " • \(pair.lecturer.name)"
             let attributedTeacher = NSAttributedString(string: teacherText)
             secondaryText.append(attributedTeacher)
         }

@@ -1,7 +1,7 @@
 import Foundation
 
 struct GroupManager {
-    let scheduleURL = URL(string: "https://api.campus.kpi.ua/schedule/groups")!
+    let scheduleURL = URL(string: "https://api.campus.kpi.ua/group/all")!
     
     var groups: [Group] {
         get async throws {

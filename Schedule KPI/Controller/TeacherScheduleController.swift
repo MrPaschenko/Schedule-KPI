@@ -168,17 +168,14 @@ extension TeacherScheduleController {
         let attributedBlueTimeText = NSAttributedString(string: timeText, attributes: blueAttributes)
         secondaryText.append(attributedBlueTimeText)
         
-        if pair.place != "" {
-            let placeText = " • \(pair.place.last == "-" ? String(pair.place.dropLast()) : pair.place)"
+        if let location = pair.location?.title, !location.isEmpty {
+            let placeText = " • \(location.last == "-" ? String(location.dropLast()) : location)"
             let attributedPlace = NSAttributedString(string: placeText)
             secondaryText.append(attributedPlace)
         }
-        
-        if pair.group != "" {
-            let groupsList = pair.group
-                .replacingOccurrences(of: "(", with: " (")
-                .replacingOccurrences(of: ",", with: ", ")
-            
+
+        if !pair.groups.isEmpty {
+            let groupsList = pair.groups.map { $0.name }.joined(separator: ", ")
             let groupsText = " • \(groupsList)"
             let attributedGroup = NSAttributedString(string: groupsText)
             secondaryText.append(attributedGroup)

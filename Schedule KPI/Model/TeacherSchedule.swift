@@ -11,11 +11,17 @@ struct TeacherScheduleDay: Decodable {
     var pairs: [TeacherPair]
 }
 
+struct TeacherPairGroup: Decodable {
+    var id: Int
+    var name: String
+}
+
 struct TeacherPair: Decodable {
-    var group: String
+    var groups: [TeacherPairGroup]
     var type: String
     var time: String
     var name: String
-    var place: String
-    //var tag: String?
+    var location: Location?
+    var tag: String
+    var dates: [String]
 }

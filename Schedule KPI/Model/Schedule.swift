@@ -20,12 +20,22 @@ enum DayName: String, Decodable {
     case saturday = "Сб"
 }
 
+struct Lecturer: Decodable {
+    var id: String
+    var name: String
+}
+
+struct Location: Decodable {
+    var uri: String
+    var title: String
+}
+
 struct Pair: Decodable {
-    var teacherName: String
-    var lecturerId: String
+    var lecturer: Lecturer
     var type: String
     var time: String
     var name: String
-    var place: String
+    var location: Location?
     var tag: String
+    var dates: [String]
 }
