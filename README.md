@@ -29,15 +29,15 @@ git clone https://github.com/MrPaschenko/Schedule-KPI
 
 ### Group schedule
 
-| Two-week schedule  | Detailed info | Change group |
-| ------------- | ------------- | ------------- |
-| ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-06-17 at 21 18 55](https://user-images.githubusercontent.com/64316080/174355497-c28cb3e1-944e-4e2d-83ee-de7f6f79a659.png) | ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-06-17 at 21 19 03](https://user-images.githubusercontent.com/64316080/174355522-92c5756f-6f77-4ea5-be61-8a11903f3a21.png) | ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-06-17 at 21 19 15](https://user-images.githubusercontent.com/64316080/174355543-bbd5251c-397b-4fbe-99c8-7f4c8e32bd52.png) |
+| Two-week schedule | Change group |
+| ------------- | ------------- |
+| <img width="300" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-28 at 06 41 02" src="https://github.com/user-attachments/assets/4376553b-689a-4ed2-a1aa-7c5124fee462" /> | <img width="300" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-28 at 06 41 06" src="https://github.com/user-attachments/assets/9d55bb90-cc62-4c74-8923-7bb968c979e8" /> |
 
 ### Teacher schedule
 
-| Two-week schedule  | Detailed info | Change teacher |
-| ------------- | ------------- | ------------- |
-| ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-06-17 at 21 21 14](https://user-images.githubusercontent.com/64316080/174355760-92dfcdb6-862d-4887-84b1-c34f494cde42.png) | ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-06-17 at 21 21 16](https://user-images.githubusercontent.com/64316080/174355796-0e728bf7-3ee0-4eec-959b-1227d38ab8d0.png) | ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-06-17 at 21 21 20](https://user-images.githubusercontent.com/64316080/174355819-4e7d5655-fadc-4041-89b1-024485e73668.png) |
+| Two-week schedule | Change teacher |
+| ------------- | ------------- |
+| <img width="300" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-28 at 06 41 28" src="https://github.com/user-attachments/assets/42c36b5d-22bf-45be-ad25-177fabf769a1" /> | <img width="300" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-28 at 06 41 19" src="https://github.com/user-attachments/assets/38835ad9-6af3-41b2-aae4-93d390e9457c" /> |
 
 ## Legal information
 
