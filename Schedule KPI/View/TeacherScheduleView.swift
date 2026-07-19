@@ -47,13 +47,15 @@ struct TeacherScheduleView: View {
 
                 if selectedTeacherId != "" {
                     ToolbarItem(placement: .topBarTrailing) {
-                        Picker(selection: $selectedWeek) {
-                            Text("week1").tag(0)
-                            Text("week2").tag(1)
+                        Menu {
+                            Picker("", selection: $selectedWeek) {
+                                Text("week1").tag(0)
+                                Text("week2").tag(1)
+                            }
+                            .pickerStyle(.inline)
                         } label: {
                             Text(verbatim: selectedWeek == 1 ? "2" : "1")
                         }
-                        .pickerStyle(.menu)
                     }
                 }
             }
