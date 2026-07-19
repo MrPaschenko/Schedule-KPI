@@ -12,7 +12,6 @@
 		A24C9E8F2836A54700698FDA /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C9E8E2836A54600698FDA /* Teacher.swift */; };
 		A24C9E912836A60200698FDA /* TeacherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C9E902836A60200698FDA /* TeacherManager.swift */; };
 		A27F6488281763DF00D6791D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27F6487281763DF00D6791D /* Assets.xcassets */; };
-		A27F648B281763E000D6791D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27F6489281763E000D6791D /* LaunchScreen.storyboard */; };
 		A27F64932818807900D6791D /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27F64922818807900D6791D /* Schedule.swift */; };
 		A2D33F0A28269EF600374AC1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0928269EF600374AC1 /* Group.swift */; };
 		A2D33F0C2826A00B00374AC1 /* GroupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0B2826A00B00374AC1 /* GroupManager.swift */; };
@@ -39,7 +38,6 @@
 		D1AF00000000000000000015 /* TeacherChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherChangeView.swift; sourceTree = "<group>"; };
 		D1AF00000000000000000016 /* ScheduleHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHelpers.swift; sourceTree = "<group>"; };
 		A27F6487281763DF00D6791D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A27F648A281763E000D6791D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27F648C281763E000D6791D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27F64922818807900D6791D /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		A2D33F0928269EF600374AC1 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				D1AF00000000000000000014 /* GroupChangeView.swift */,
 				D1AF00000000000000000015 /* TeacherChangeView.swift */,
 				D1AF00000000000000000016 /* ScheduleHelpers.swift */,
-				A27F6489281763E000D6791D /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,7 +174,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27F648B281763E000D6791D /* LaunchScreen.storyboard in Resources */,
 				A2E285092CAD73D900610A9E /* Localizable.xcstrings in Resources */,
 				A27F6488281763DF00D6791D /* Assets.xcassets in Resources */,
 			);
@@ -210,14 +206,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A27F6489281763E000D6791D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A27F648A281763E000D6791D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -355,7 +343,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Schedule KPI";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -384,7 +372,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Schedule KPI";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
