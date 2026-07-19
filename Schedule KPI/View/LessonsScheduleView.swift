@@ -47,12 +47,13 @@ struct LessonsScheduleView: View {
 
                 if selectedGroupId != "" {
                     ToolbarItem(placement: .topBarTrailing) {
-                        Picker("", selection: $selectedWeek) {
-                            Text(verbatim: "1").tag(0)
-                            Text(verbatim: "2").tag(1)
+                        Picker(selection: $selectedWeek) {
+                            Text("week1").tag(0)
+                            Text("week2").tag(1)
+                        } label: {
+                            Text(verbatim: selectedWeek == 1 ? "2" : "1")
                         }
-                        .pickerStyle(.segmented)
-                        .fixedSize()
+                        .pickerStyle(.menu)
                     }
                 }
             }

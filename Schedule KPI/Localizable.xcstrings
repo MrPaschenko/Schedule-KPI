@@ -1,498 +1,558 @@
 {
-  "sourceLanguage" : "uk",
-  "strings" : {
-    "friday" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cum’a"
+  "sourceLanguage": "uk",
+  "strings": {
+    "": {},
+    " • %@": {},
+    "friday": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cum’a"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Friday"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Friday"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Пятница"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пятница"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Пʼятниця"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пʼятниця"
           }
         }
       }
     },
-    "group" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grupa"
+    "group": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grupa"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Group"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Group"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Группа"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Группа"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Група"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Група"
           }
         }
       }
     },
-    "groupChange" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grupa değişimi"
+    "groupChange": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grupa değişimi"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Changing group"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changing group"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Изменение группы"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменение группы"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Зміна групи"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зміна групи"
           }
         }
       }
     },
-    "groupIsNotSelected" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grupa seçilmedi"
+    "groupIsNotSelected": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grupa seçilmedi"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Group is not selected"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Group is not selected"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Группа не выбрана"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Группа не выбрана"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Група не вибрана"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Група не вибрана"
           }
         }
       }
     },
-    "groupName" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grupa adı"
+    "groupName": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grupa adı"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Group name"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Group name"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Название группы"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название группы"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Назва групи"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Назва групи"
           }
         }
       }
     },
-    "monday" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pazartesi"
+    "monday": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pazartesi"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Monday"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monday"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Понедельник"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Понедельник"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Понеділок"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Понеділок"
           }
         }
       }
     },
-    "ok" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tamam"
+    "ok": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamam"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OK"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ОК"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ОК"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ОК"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ОК"
           }
         }
       }
     },
-    "saturday" : {
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cumartesi"
+    "saturday": {
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cumartesi"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saturday"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saturday"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Суббота"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Суббота"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Субота"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Субота"
           }
         }
       }
     },
-    "search" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Qıdır"
+    "search": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qıdır"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Search"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Поиск"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поиск"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Пошук"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пошук"
           }
         }
       }
     },
-    "session" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seans"
+    "session": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seans"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Session"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Session"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сессия"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сессия"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сесія"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сесія"
           }
         }
       }
     },
-    "teacher" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Muallim"
+    "teacher": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muallim"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Teacher"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teacher"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Преподаватель"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Преподаватель"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Викладач"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Викладач"
           }
         }
       }
     },
-    "teacherChange" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Muallim değişimi"
+    "teacherChange": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muallim değişimi"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Changing teacher"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changing teacher"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Изменение преподавателя"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменение преподавателя"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Зміна викладача"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зміна викладача"
           }
         }
       }
     },
-    "teacherIsNotSelected" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Muallim seçilmedi"
+    "teacherIsNotSelected": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muallim seçilmedi"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Teacher is not selected"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teacher is not selected"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Преподаватель не выбран"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Преподаватель не выбран"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Викладач не вибраний"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Викладач не вибраний"
           }
         }
       }
     },
-    "teacherName" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Muallim adı"
+    "teacherName": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muallim adı"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Teacher name"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teacher name"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Имя преподавателя"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Имя преподавателя"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Імʼя викладача"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Імʼя викладача"
           }
         }
       }
     },
-    "thursday" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perşembe"
+    "thursday": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perşembe"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Thursday"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thursday"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Четверг"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Четверг"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Четвер"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Четвер"
           }
         }
       }
     },
-    "tuesday" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salı"
+    "tuesday": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salı"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tuesday"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tuesday"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вторник"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вторник"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вівторок"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вівторок"
           }
         }
       }
     },
-    "wednesday" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "crh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Çarşamba"
+    "wednesday": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çarşamba"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wednesday"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wednesday"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Среда"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Среда"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Середа"
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Середа"
+          }
+        }
+      }
+    },
+    "week1": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1-inci afta"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Week 1"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1-я неделя"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1-й тиждень"
+          }
+        }
+      }
+    },
+    "week2": {
+      "extractionState": "manual",
+      "localizations": {
+        "crh": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2-nci afta"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Week 2"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2-я неделя"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2-й тиждень"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
