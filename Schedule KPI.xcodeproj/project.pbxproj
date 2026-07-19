@@ -7,47 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A24C9E8728368E0400698FDA /* TeacherScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C9E8628368E0400698FDA /* TeacherScheduleController.swift */; };
 		A24C9E8928368E4700698FDA /* TeacherSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C9E8828368E4700698FDA /* TeacherSchedule.swift */; };
 		A24C9E8B28368F9700698FDA /* TeacherScheduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C9E8A28368F9700698FDA /* TeacherScheduleManager.swift */; };
-		A24C9E8D2836A14200698FDA /* TeacherChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C9E8C2836A14200698FDA /* TeacherChangeController.swift */; };
 		A24C9E8F2836A54700698FDA /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C9E8E2836A54600698FDA /* Teacher.swift */; };
 		A24C9E912836A60200698FDA /* TeacherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C9E902836A60200698FDA /* TeacherManager.swift */; };
-		A27F647F281763DD00D6791D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27F647E281763DD00D6791D /* AppDelegate.swift */; };
-		A27F6481281763DD00D6791D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27F6480281763DD00D6791D /* SceneDelegate.swift */; };
-		A27F6486281763DD00D6791D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27F6484281763DD00D6791D /* Main.storyboard */; };
 		A27F6488281763DF00D6791D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27F6487281763DF00D6791D /* Assets.xcassets */; };
 		A27F648B281763E000D6791D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27F6489281763E000D6791D /* LaunchScreen.storyboard */; };
 		A27F64932818807900D6791D /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27F64922818807900D6791D /* Schedule.swift */; };
-		A2D33F0828269C4D00374AC1 /* GroupChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0728269C4D00374AC1 /* GroupChangeController.swift */; };
 		A2D33F0A28269EF600374AC1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0928269EF600374AC1 /* Group.swift */; };
 		A2D33F0C2826A00B00374AC1 /* GroupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D33F0B2826A00B00374AC1 /* GroupManager.swift */; };
 		A2E285092CAD73D900610A9E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A2E285082CAD73D900610A9E /* Localizable.xcstrings */; };
-		A2F7D772281882D900201950 /* LessonsScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F7D771281882D900201950 /* LessonsScheduleController.swift */; };
 		A2F7D774281884EC00201950 /* ScheduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F7D773281884EC00201950 /* ScheduleManager.swift */; };
+		D1AF00000000000000000201 /* ScheduleKPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF00000000000000000011 /* ScheduleKPIApp.swift */; };
+		D1AF00000000000000000202 /* LessonsScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF00000000000000000012 /* LessonsScheduleView.swift */; };
+		D1AF00000000000000000203 /* TeacherScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF00000000000000000013 /* TeacherScheduleView.swift */; };
+		D1AF00000000000000000204 /* GroupChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF00000000000000000014 /* GroupChangeView.swift */; };
+		D1AF00000000000000000205 /* TeacherChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF00000000000000000015 /* TeacherChangeView.swift */; };
+		D1AF00000000000000000206 /* ScheduleHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF00000000000000000016 /* ScheduleHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A203BD0E2CC6885C0088BA0C /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/Main.xcstrings; sourceTree = "<group>"; };
-		A24C9E8628368E0400698FDA /* TeacherScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherScheduleController.swift; sourceTree = "<group>"; };
 		A24C9E8828368E4700698FDA /* TeacherSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSchedule.swift; sourceTree = "<group>"; };
 		A24C9E8A28368F9700698FDA /* TeacherScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherScheduleManager.swift; sourceTree = "<group>"; };
-		A24C9E8C2836A14200698FDA /* TeacherChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherChangeController.swift; sourceTree = "<group>"; };
 		A24C9E8E2836A54600698FDA /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		A24C9E902836A60200698FDA /* TeacherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherManager.swift; sourceTree = "<group>"; };
 		A27F647B281763DD00D6791D /* Schedule KPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schedule KPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A27F647E281763DD00D6791D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A27F6480281763DD00D6791D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A27F6485281763DD00D6791D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1AF00000000000000000011 /* ScheduleKPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleKPIApp.swift; sourceTree = "<group>"; };
+		D1AF00000000000000000012 /* LessonsScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsScheduleView.swift; sourceTree = "<group>"; };
+		D1AF00000000000000000013 /* TeacherScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherScheduleView.swift; sourceTree = "<group>"; };
+		D1AF00000000000000000014 /* GroupChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChangeView.swift; sourceTree = "<group>"; };
+		D1AF00000000000000000015 /* TeacherChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherChangeView.swift; sourceTree = "<group>"; };
+		D1AF00000000000000000016 /* ScheduleHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHelpers.swift; sourceTree = "<group>"; };
 		A27F6487281763DF00D6791D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27F648A281763E000D6791D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27F648C281763E000D6791D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27F64922818807900D6791D /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		A2D33F0728269C4D00374AC1 /* GroupChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChangeController.swift; sourceTree = "<group>"; };
 		A2D33F0928269EF600374AC1 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		A2D33F0B2826A00B00374AC1 /* GroupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupManager.swift; sourceTree = "<group>"; };
 		A2E285082CAD73D900610A9E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		A2F7D771281882D900201950 /* LessonsScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsScheduleController.swift; sourceTree = "<group>"; };
 		A2F7D773281884EC00201950 /* ScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,11 +78,9 @@
 		A27F647D281763DD00D6791D /* Schedule KPI */ = {
 			isa = PBXGroup;
 			children = (
-				A27F647E281763DD00D6791D /* AppDelegate.swift */,
-				A27F6480281763DD00D6791D /* SceneDelegate.swift */,
+				D1AF00000000000000000011 /* ScheduleKPIApp.swift */,
 				A27F64942818808200D6791D /* Model */,
 				A27F6495281881F000D6791D /* View */,
-				A27F64962818820200D6791D /* Controller */,
 				A27F6487281763DF00D6791D /* Assets.xcassets */,
 				A27F648C281763E000D6791D /* Info.plist */,
 				A2E285082CAD73D900610A9E /* Localizable.xcstrings */,
@@ -111,21 +106,14 @@
 		A27F6495281881F000D6791D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A27F6484281763DD00D6791D /* Main.storyboard */,
+				D1AF00000000000000000012 /* LessonsScheduleView.swift */,
+				D1AF00000000000000000013 /* TeacherScheduleView.swift */,
+				D1AF00000000000000000014 /* GroupChangeView.swift */,
+				D1AF00000000000000000015 /* TeacherChangeView.swift */,
+				D1AF00000000000000000016 /* ScheduleHelpers.swift */,
 				A27F6489281763E000D6791D /* LaunchScreen.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A27F64962818820200D6791D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A2F7D771281882D900201950 /* LessonsScheduleController.swift */,
-				A2D33F0728269C4D00374AC1 /* GroupChangeController.swift */,
-				A24C9E8628368E0400698FDA /* TeacherScheduleController.swift */,
-				A24C9E8C2836A14200698FDA /* TeacherChangeController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +180,6 @@
 				A27F648B281763E000D6791D /* LaunchScreen.storyboard in Resources */,
 				A2E285092CAD73D900610A9E /* Localizable.xcstrings in Resources */,
 				A27F6488281763DF00D6791D /* Assets.xcassets in Resources */,
-				A27F6486281763DD00D6791D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,16 +192,16 @@
 			files = (
 				A24C9E8B28368F9700698FDA /* TeacherScheduleManager.swift in Sources */,
 				A24C9E8F2836A54700698FDA /* Teacher.swift in Sources */,
-				A27F647F281763DD00D6791D /* AppDelegate.swift in Sources */,
-				A24C9E8D2836A14200698FDA /* TeacherChangeController.swift in Sources */,
-				A24C9E8728368E0400698FDA /* TeacherScheduleController.swift in Sources */,
+				D1AF00000000000000000201 /* ScheduleKPIApp.swift in Sources */,
+				D1AF00000000000000000202 /* LessonsScheduleView.swift in Sources */,
+				D1AF00000000000000000203 /* TeacherScheduleView.swift in Sources */,
+				D1AF00000000000000000204 /* GroupChangeView.swift in Sources */,
+				D1AF00000000000000000205 /* TeacherChangeView.swift in Sources */,
+				D1AF00000000000000000206 /* ScheduleHelpers.swift in Sources */,
 				A2F7D774281884EC00201950 /* ScheduleManager.swift in Sources */,
-				A2F7D772281882D900201950 /* LessonsScheduleController.swift in Sources */,
 				A27F64932818807900D6791D /* Schedule.swift in Sources */,
 				A24C9E912836A60200698FDA /* TeacherManager.swift in Sources */,
-				A27F6481281763DD00D6791D /* SceneDelegate.swift in Sources */,
 				A2D33F0C2826A00B00374AC1 /* GroupManager.swift in Sources */,
-				A2D33F0828269C4D00374AC1 /* GroupChangeController.swift in Sources */,
 				A2D33F0A28269EF600374AC1 /* Group.swift in Sources */,
 				A24C9E8928368E4700698FDA /* TeacherSchedule.swift in Sources */,
 			);
@@ -223,15 +210,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A27F6484281763DD00D6791D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A27F6485281763DD00D6791D /* Base */,
-				A203BD0E2CC6885C0088BA0C /* mul */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A27F6489281763E000D6791D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -378,7 +356,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -408,7 +385,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
